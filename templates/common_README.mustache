@@ -1,0 +1,150 @@
+```python
+import openapi_client
+from openapi_client.rest import ApiException
+
+
+# Defining the host is optional and defaults to https://scientia.chemos.io/web_portal/api
+# Configure API key authorization: api_key
+# See configuration.py for a list of all supported configuration parameters.
+configuration = openapi_client.Configuration(
+    host = "https://scientia.chemos.io/web_portal/api",
+    api_key = {
+        'X-API-KEY': 'YOUR_API_KEY'
+    }
+)
+
+
+# To start managing your projects, enter a context with an instance of the API client for Projects
+with openapi_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    projects = openapi_client.ProjectsApi(api_client)
+    try:
+        # List project subscriptions
+        api_response = projects.list_projects()
+        print("\nList of projects before project creation: \n", api_response.objects)
+
+        # Create a new project
+        project_create_req = openapi_client.ProjectCreateReq(
+                                   project_name="project_1",
+                                   project_description="My first project"
+                              )
+        api_response = projects.create_project(project_create_req=project_create_req)
+        project_id = api_response.object.id # String with project id
+        
+        
+        # List project subscriptions
+        api_response = projects.list_projects()
+        print("\nList of projects after project creation: \n", api_response.objects)
+
+        # Subscribe users to a project (only available to project owner)
+        project_subscribe_req = openapi_client.ProjectSubscribeReq(email_list=['email1@domain.com', 'email2@domain.com'])
+        projects.subscribe_users(project_id, project_subscribe_req=project_subscribe_req)
+
+        # Get project details
+        api_response = projects.get_project(project_id)
+        print("\nProject details: \n", api_response.object)
+
+    except ApiException as e:
+        print("Exception when calling an endpoint from ProjectsApi: %s\n" % e)
+
+
+# To start managing your files, enter a context with an instance of the API client for Files
+with openapi_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    files = openapi_client.FilesApi(api_client)
+    try:
+        # List files associated to project with project_id
+        api_response = files.list_files(project_id=project_id)
+        print("\nList of files before file upload: \n", api_response.objects)
+
+        # Upload a file
+        group_type = 'parameters'
+        inline_object = openapi_client.InlineObject(file='data/wine_data.csv')
+        api_response = files.upload_file(project_id, group_type, inline_object=inline_object)
+        file_id = api_response.object.id # String with file id
+
+        # List files associated to project with project_id
+        api_response = files.list_files(project_id=project_id)
+        print("\nList of files after file upload: \n", api_response.objects)
+
+        # Download the file
+        api_response = files.download_file(file_id)
+        print("\nFile downloaded to:", api_response)
+
+        # Delete the file
+        files.delete_file(file_id)
+
+    except ApiException as e:
+        print("Exception when calling an endpoint from ManageFilesApi: %s\n" % e)
+
+
+# To finalize the example, we delete the project by using an instance of the API client for Projects.
+# Note that we can delete the project in this case because there are no subscriptions or files associated to it.
+with openapi_client.ApiClient(configuration) as api_client:
+    projects = openapi_client.ProjectsApi(api_client)
+    try:
+
+        # Delete project (only available to project owner)
+        projects.delete_project(project_id)
+
+    except ApiException as e:
+        print("Exception when calling an endpoint from ProjectsApi: %s\n" % e)
+```
+
+### Documentation for API Endpoints
+
+All URIs are relative to *{{basePath}}*
+
+Class | Method | HTTP request | Description
+------------ | ------------- | ------------- | -------------
+{{#apiInfo}}{{#apis}}{{#operations}}{{#operation}}*{{classname}}* | [**{{operationId}}**]({{apiDocPath}}{{classname}}.md#{{operationIdLowerCase}}) | **{{httpMethod}}** {{path}} | {{#summary}}{{summary}}{{/summary}}
+{{/operation}}{{/operations}}{{/apis}}{{/apiInfo}}
+
+### Documentation For Models
+
+{{#models}}{{#model}} - [{{{classname}}}]({{modelDocPath}}{{{classname}}}.md)
+{{/model}}{{/models}}
+
+### Documentation For Authorization
+
+{{^authMethods}}
+ All endpoints do not require authorization.
+{{/authMethods}}
+{{#authMethods}}
+{{#last}} Authentication schemes defined for the API:{{/last}}
+#### {{{name}}}
+
+{{#isApiKey}}
+- **Type**: API key
+- **API key parameter name**: {{{keyParamName}}}
+- **Location**: {{#isKeyInQuery}}URL query string{{/isKeyInQuery}}{{#isKeyInHeader}}HTTP header{{/isKeyInHeader}}
+{{/isApiKey}}
+{{#isBasic}}
+{{#isBasicBasic}}
+- **Type**: HTTP basic authentication
+{{/isBasicBasic}}
+{{#isBasicBearer}}
+- **Type**: Bearer authentication{{#bearerFormat}} ({{{.}}}){{/bearerFormat}}
+{{/isBasicBearer}}
+{{/isBasic}}
+{{#isOAuth}}
+- **Type**: OAuth
+- **Flow**: {{{flow}}}
+- **Authorization URL**: {{{authorizationUrl}}}
+- **Scopes**: {{^scopes}}N/A{{/scopes}}
+{{#scopes}} - **{{{scope}}}**: {{{description}}}
+{{/scopes}}
+{{/isOAuth}}
+
+{{/authMethods}}
+
+
+### Experiencing problems?
+
+Please create a [new issue](https://github.com/chemos-inc/web_portal_sdk/issues/new/choose) and describe your problem in detail so we can fix it.
+
+
+### Contact 
+
+{{#apiInfo}}{{#apis}}{{^hasMore}}{{infoEmail}}
+{{/hasMore}}{{/apis}}{{/apiInfo}}
