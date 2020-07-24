@@ -2,9 +2,9 @@
 
 # flake8: noqa
 """
-    ChemOS Web Portal
+    ChemOS™ Web Portal
 
-    API entry point for ChemOS Web Portal. This API allows users to manage their project subscriptions and to share files among collaborators involved in the same project(s). The api usage requires an `API KEY`, associated to your Web Portal account. You can generate your `API KEY` on your [account information page](https://scientia.chemos.io/user).  # noqa: E501
+    As part of the ChemOS™ Web Portal, we offer a downloadable software development kit (SDK) client, which facilitates the access to the application programming interface (API) entry point. This API allows users to manage their project subscriptions and to share files among collaborators involved in the same project(s). The api usage requires an `API KEY`, associated to your Web Portal account. You can generate your `API KEY` on your [account information page](https://scientia.chemos.io/user).  # noqa: E501
 
     The version of the OpenAPI document: beta
     Contact: support@chemos.io
@@ -31,5 +31,7 @@ from openapi_client.models.project_subscribe_req import ProjectSubscribeReq
 from openapi_client.models.project_unsubscribe_req import ProjectUnsubscribeReq
 from openapi_client.models.project_update_req import ProjectUpdateReq
 from openapi_client.models.result import Result
+from openapi_client.models.service_info import ServiceInfo
+from openapi_client.models.service_info_response import ServiceInfoResponse
 from openapi_client.models.upload_response import UploadResponse
 from openapi_client.models.upload_response_object import UploadResponseObject
