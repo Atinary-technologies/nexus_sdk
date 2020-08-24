@@ -153,6 +153,7 @@ Class | Method | HTTP request | Description
 *FilesApi* | [**list_files**](docs/FilesApi.md#list_files) | **GET** /Files | List available files for a project
 *FilesApi* | [**upload_file**](docs/FilesApi.md#upload_file) | **POST** /Files | Upload a file under a project
 *ProjectsApi* | [**create_project**](docs/ProjectsApi.md#create_project) | **POST** /Projects | Create a new project
+*ProjectsApi* | [**create_tutorial_project**](docs/ProjectsApi.md#create_tutorial_project) | **POST** /Tutorial | Create the tutorial project
 *ProjectsApi* | [**delete_project**](docs/ProjectsApi.md#delete_project) | **DELETE** /Projects/{project_id} | Delete a project
 *ProjectsApi* | [**get_project**](docs/ProjectsApi.md#get_project) | **GET** /Projects/{project_id} | Get project information
 *ProjectsApi* | [**list_projects**](docs/ProjectsApi.md#list_projects) | **GET** /Projects | List project subscriptions
