@@ -659,6 +659,7 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 **200** | List successfully retrieved |  -  |
 **401** | Unauthorized |  -  |
+**0** | Unexpected error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

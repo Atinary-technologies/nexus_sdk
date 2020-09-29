@@ -80,6 +80,12 @@ class AvailableFilesSummary(object):
         """
         if self.local_vars_configuration.client_side_validation and parameters is None:  # noqa: E501
             raise ValueError("Invalid value for `parameters`, must not be `None`")  # noqa: E501
+        if (self.local_vars_configuration.client_side_validation and
+                parameters is not None and parameters > 1000):  # noqa: E501
+            raise ValueError("Invalid value for `parameters`, must be a value less than or equal to `1000`")  # noqa: E501
+        if (self.local_vars_configuration.client_side_validation and
+                parameters is not None and parameters < 0):  # noqa: E501
+            raise ValueError("Invalid value for `parameters`, must be a value greater than or equal to `0`")  # noqa: E501
 
         self._parameters = parameters
 
@@ -103,6 +109,12 @@ class AvailableFilesSummary(object):
         """
         if self.local_vars_configuration.client_side_validation and properties is None:  # noqa: E501
             raise ValueError("Invalid value for `properties`, must not be `None`")  # noqa: E501
+        if (self.local_vars_configuration.client_side_validation and
+                properties is not None and properties > 1000):  # noqa: E501
+            raise ValueError("Invalid value for `properties`, must be a value less than or equal to `1000`")  # noqa: E501
+        if (self.local_vars_configuration.client_side_validation and
+                properties is not None and properties < 0):  # noqa: E501
+            raise ValueError("Invalid value for `properties`, must be a value greater than or equal to `0`")  # noqa: E501
 
         self._properties = properties
 
@@ -126,6 +138,12 @@ class AvailableFilesSummary(object):
         """
         if self.local_vars_configuration.client_side_validation and other is None:  # noqa: E501
             raise ValueError("Invalid value for `other`, must not be `None`")  # noqa: E501
+        if (self.local_vars_configuration.client_side_validation and
+                other is not None and other > 1000):  # noqa: E501
+            raise ValueError("Invalid value for `other`, must be a value less than or equal to `1000`")  # noqa: E501
+        if (self.local_vars_configuration.client_side_validation and
+                other is not None and other < 0):  # noqa: E501
+            raise ValueError("Invalid value for `other`, must be a value greater than or equal to `0`")  # noqa: E501
 
         self._other = other
 
