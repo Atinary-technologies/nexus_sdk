@@ -1,6 +1,6 @@
 # openapi_client.AdminApi
 
-All URIs are relative to *https://scientia.chemos.io/web_portal/api*
+All URIs are relative to *https://scientia.atinary.com/nexus/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -23,10 +23,10 @@ import time
 import openapi_client
 from openapi_client.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.chemos.io/web_portal/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
 configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api"
+    host = "https://scientia.atinary.com/nexus/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -36,7 +36,7 @@ configuration = openapi_client.Configuration(
 
 # Configure API key authorization: api_key
 configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api",
+    host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -69,10 +69,10 @@ import time
 import openapi_client
 from openapi_client.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.chemos.io/web_portal/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
 configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api"
+    host = "https://scientia.atinary.com/nexus/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -82,7 +82,7 @@ configuration = openapi_client.Configuration(
 
 # Configure API key authorization: api_key
 configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api",
+    host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }

@@ -1,6 +1,6 @@
 # openapi_client.ProjectsApi
 
-All URIs are relative to *https://scientia.chemos.io/web_portal/api*
+All URIs are relative to *https://scientia.atinary.com/nexus/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -30,10 +30,10 @@ import time
 import openapi_client
 from openapi_client.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.chemos.io/web_portal/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
 configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api"
+    host = "https://scientia.atinary.com/nexus/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -43,7 +43,7 @@ configuration = openapi_client.Configuration(
 
 # Configure API key authorization: api_key
 configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api",
+    host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -77,10 +77,10 @@ import time
 import openapi_client
 from openapi_client.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.chemos.io/web_portal/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
 configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api"
+    host = "https://scientia.atinary.com/nexus/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -90,7 +90,7 @@ configuration = openapi_client.Configuration(
 
 # Configure API key authorization: api_key
 configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api",
+    host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -162,10 +162,10 @@ import time
 import openapi_client
 from openapi_client.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.chemos.io/web_portal/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
 configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api"
+    host = "https://scientia.atinary.com/nexus/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -175,7 +175,7 @@ configuration = openapi_client.Configuration(
 
 # Configure API key authorization: api_key
 configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api",
+    host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -208,10 +208,10 @@ import time
 import openapi_client
 from openapi_client.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.chemos.io/web_portal/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
 configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api"
+    host = "https://scientia.atinary.com/nexus/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -221,7 +221,7 @@ configuration = openapi_client.Configuration(
 
 # Configure API key authorization: api_key
 configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api",
+    host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -289,10 +289,10 @@ import time
 import openapi_client
 from openapi_client.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.chemos.io/web_portal/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
 configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api"
+    host = "https://scientia.atinary.com/nexus/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -302,7 +302,7 @@ configuration = openapi_client.Configuration(
 
 # Configure API key authorization: api_key
 configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api",
+    host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -319,7 +319,7 @@ configuration = openapi_client.Configuration(
 with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = openapi_client.ProjectsApi(api_client)
-    project_id = 'project_id_example' # str | ID assigned to the project once created in Web Portal.
+    project_id = 'project_id_example' # str | ID assigned to the project once created in Atinary™ Nexus.
 
     try:
         # Delete a project
@@ -336,10 +336,10 @@ import time
 import openapi_client
 from openapi_client.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.chemos.io/web_portal/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
 configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api"
+    host = "https://scientia.atinary.com/nexus/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -349,7 +349,7 @@ configuration = openapi_client.Configuration(
 
 # Configure API key authorization: api_key
 configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api",
+    host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -366,7 +366,7 @@ configuration = openapi_client.Configuration(
 with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = openapi_client.ProjectsApi(api_client)
-    project_id = 'project_id_example' # str | ID assigned to the project once created in Web Portal.
+    project_id = 'project_id_example' # str | ID assigned to the project once created in Atinary™ Nexus.
 
     try:
         # Delete a project
@@ -380,7 +380,7 @@ with openapi_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **project_id** | **str**| ID assigned to the project once created in Web Portal. | 
+ **project_id** | **str**| ID assigned to the project once created in Atinary™ Nexus. | 
 
 ### Return type
 
@@ -421,10 +421,10 @@ import time
 import openapi_client
 from openapi_client.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.chemos.io/web_portal/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
 configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api"
+    host = "https://scientia.atinary.com/nexus/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -434,7 +434,7 @@ configuration = openapi_client.Configuration(
 
 # Configure API key authorization: api_key
 configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api",
+    host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -451,7 +451,7 @@ configuration = openapi_client.Configuration(
 with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = openapi_client.ProjectsApi(api_client)
-    project_id = 'project_id_example' # str | ID assigned to the project once created in Web Portal.
+    project_id = 'project_id_example' # str | ID assigned to the project once created in Atinary™ Nexus.
 
     try:
         # Get project information
@@ -468,10 +468,10 @@ import time
 import openapi_client
 from openapi_client.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.chemos.io/web_portal/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
 configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api"
+    host = "https://scientia.atinary.com/nexus/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -481,7 +481,7 @@ configuration = openapi_client.Configuration(
 
 # Configure API key authorization: api_key
 configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api",
+    host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -498,7 +498,7 @@ configuration = openapi_client.Configuration(
 with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = openapi_client.ProjectsApi(api_client)
-    project_id = 'project_id_example' # str | ID assigned to the project once created in Web Portal.
+    project_id = 'project_id_example' # str | ID assigned to the project once created in Atinary™ Nexus.
 
     try:
         # Get project information
@@ -512,7 +512,7 @@ with openapi_client.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **project_id** | **str**| ID assigned to the project once created in Web Portal. | 
+ **project_id** | **str**| ID assigned to the project once created in Atinary™ Nexus. | 
 
 ### Return type
 
@@ -553,10 +553,10 @@ import time
 import openapi_client
 from openapi_client.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.chemos.io/web_portal/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
 configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api"
+    host = "https://scientia.atinary.com/nexus/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -566,7 +566,7 @@ configuration = openapi_client.Configuration(
 
 # Configure API key authorization: api_key
 configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api",
+    host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -599,10 +599,10 @@ import time
 import openapi_client
 from openapi_client.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.chemos.io/web_portal/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
 configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api"
+    host = "https://scientia.atinary.com/nexus/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -612,7 +612,7 @@ configuration = openapi_client.Configuration(
 
 # Configure API key authorization: api_key
 configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api",
+    host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -659,6 +659,7 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 **200** | List successfully retrieved |  -  |
 **401** | Unauthorized |  -  |
+**0** | Unexpected error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -678,10 +679,10 @@ import time
 import openapi_client
 from openapi_client.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.chemos.io/web_portal/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
 configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api"
+    host = "https://scientia.atinary.com/nexus/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -691,7 +692,7 @@ configuration = openapi_client.Configuration(
 
 # Configure API key authorization: api_key
 configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api",
+    host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -708,7 +709,7 @@ configuration = openapi_client.Configuration(
 with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = openapi_client.ProjectsApi(api_client)
-    project_id = 'project_id_example' # str | ID assigned to the project once created in Web Portal.
+    project_id = 'project_id_example' # str | ID assigned to the project once created in Atinary™ Nexus.
 project_subscribe_req = openapi_client.ProjectSubscribeReq() # ProjectSubscribeReq | Json object containing the list of user **emails** to add to the project. (optional)
 
     try:
@@ -726,10 +727,10 @@ import time
 import openapi_client
 from openapi_client.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.chemos.io/web_portal/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
 configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api"
+    host = "https://scientia.atinary.com/nexus/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -739,7 +740,7 @@ configuration = openapi_client.Configuration(
 
 # Configure API key authorization: api_key
 configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api",
+    host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -756,7 +757,7 @@ configuration = openapi_client.Configuration(
 with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = openapi_client.ProjectsApi(api_client)
-    project_id = 'project_id_example' # str | ID assigned to the project once created in Web Portal.
+    project_id = 'project_id_example' # str | ID assigned to the project once created in Atinary™ Nexus.
 project_subscribe_req = openapi_client.ProjectSubscribeReq() # ProjectSubscribeReq | Json object containing the list of user **emails** to add to the project. (optional)
 
     try:
@@ -771,7 +772,7 @@ project_subscribe_req = openapi_client.ProjectSubscribeReq() # ProjectSubscribeR
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **project_id** | **str**| ID assigned to the project once created in Web Portal. | 
+ **project_id** | **str**| ID assigned to the project once created in Atinary™ Nexus. | 
  **project_subscribe_req** | [**ProjectSubscribeReq**](ProjectSubscribeReq.md)| Json object containing the list of user **emails** to add to the project. | [optional] 
 
 ### Return type
@@ -813,10 +814,10 @@ import time
 import openapi_client
 from openapi_client.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.chemos.io/web_portal/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
 configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api"
+    host = "https://scientia.atinary.com/nexus/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -826,7 +827,7 @@ configuration = openapi_client.Configuration(
 
 # Configure API key authorization: api_key
 configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api",
+    host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -843,7 +844,7 @@ configuration = openapi_client.Configuration(
 with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = openapi_client.ProjectsApi(api_client)
-    project_id = 'project_id_example' # str | ID assigned to the project once created in Web Portal.
+    project_id = 'project_id_example' # str | ID assigned to the project once created in Atinary™ Nexus.
 project_unsubscribe_req = openapi_client.ProjectUnsubscribeReq() # ProjectUnsubscribeReq | Json object containing the list of user **emails** to unsubscribe from the project. If this list is empty, then the caller is unsubscribed from the project. (optional)
 
     try:
@@ -861,10 +862,10 @@ import time
 import openapi_client
 from openapi_client.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.chemos.io/web_portal/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
 configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api"
+    host = "https://scientia.atinary.com/nexus/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -874,7 +875,7 @@ configuration = openapi_client.Configuration(
 
 # Configure API key authorization: api_key
 configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api",
+    host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -891,7 +892,7 @@ configuration = openapi_client.Configuration(
 with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = openapi_client.ProjectsApi(api_client)
-    project_id = 'project_id_example' # str | ID assigned to the project once created in Web Portal.
+    project_id = 'project_id_example' # str | ID assigned to the project once created in Atinary™ Nexus.
 project_unsubscribe_req = openapi_client.ProjectUnsubscribeReq() # ProjectUnsubscribeReq | Json object containing the list of user **emails** to unsubscribe from the project. If this list is empty, then the caller is unsubscribed from the project. (optional)
 
     try:
@@ -906,7 +907,7 @@ project_unsubscribe_req = openapi_client.ProjectUnsubscribeReq() # ProjectUnsubs
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **project_id** | **str**| ID assigned to the project once created in Web Portal. | 
+ **project_id** | **str**| ID assigned to the project once created in Atinary™ Nexus. | 
  **project_unsubscribe_req** | [**ProjectUnsubscribeReq**](ProjectUnsubscribeReq.md)| Json object containing the list of user **emails** to unsubscribe from the project. If this list is empty, then the caller is unsubscribed from the project. | [optional] 
 
 ### Return type
@@ -948,10 +949,10 @@ import time
 import openapi_client
 from openapi_client.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.chemos.io/web_portal/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
 configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api"
+    host = "https://scientia.atinary.com/nexus/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -961,7 +962,7 @@ configuration = openapi_client.Configuration(
 
 # Configure API key authorization: api_key
 configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api",
+    host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -978,7 +979,7 @@ configuration = openapi_client.Configuration(
 with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = openapi_client.ProjectsApi(api_client)
-    project_id = 'project_id_example' # str | ID assigned to the project once created in Web Portal.
+    project_id = 'project_id_example' # str | ID assigned to the project once created in Atinary™ Nexus.
 project_update_req = openapi_client.ProjectUpdateReq() # ProjectUpdateReq | Json object containing  **new_name**, **new_description** and/or **new_owner**. Note that only users subscribed to the project can be project owners. The project owner is the only one authorized to call this method. (optional)
 
     try:
@@ -996,10 +997,10 @@ import time
 import openapi_client
 from openapi_client.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.chemos.io/web_portal/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
 configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api"
+    host = "https://scientia.atinary.com/nexus/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -1009,7 +1010,7 @@ configuration = openapi_client.Configuration(
 
 # Configure API key authorization: api_key
 configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api",
+    host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -1026,7 +1027,7 @@ configuration = openapi_client.Configuration(
 with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = openapi_client.ProjectsApi(api_client)
-    project_id = 'project_id_example' # str | ID assigned to the project once created in Web Portal.
+    project_id = 'project_id_example' # str | ID assigned to the project once created in Atinary™ Nexus.
 project_update_req = openapi_client.ProjectUpdateReq() # ProjectUpdateReq | Json object containing  **new_name**, **new_description** and/or **new_owner**. Note that only users subscribed to the project can be project owners. The project owner is the only one authorized to call this method. (optional)
 
     try:
@@ -1041,7 +1042,7 @@ project_update_req = openapi_client.ProjectUpdateReq() # ProjectUpdateReq | Json
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **project_id** | **str**| ID assigned to the project once created in Web Portal. | 
+ **project_id** | **str**| ID assigned to the project once created in Atinary™ Nexus. | 
  **project_update_req** | [**ProjectUpdateReq**](ProjectUpdateReq.md)| Json object containing  **new_name**, **new_description** and/or **new_owner**. Note that only users subscribed to the project can be project owners. The project owner is the only one authorized to call this method. | [optional] 
 
 ### Return type

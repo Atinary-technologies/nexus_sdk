@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**project_id** | **str** | ID assigned to the project once created in Web Portal | 
+**project_id** | **str** | ID assigned to the project once created in Atinary™ Nexus | 
 **name** | **str** | Name assigned to the project | 
 **owner** | **str** | User email | 
 **files** | [**AvailableFilesSummary**](AvailableFilesSummary.md) |  | 

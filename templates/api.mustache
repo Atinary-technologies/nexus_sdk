@@ -221,7 +221,7 @@ class {{classname}}(object):
         body_params = None
 {{#bodyParam}}
         if '{{paramName}}' in local_var_params:
-            # Code customized by cwilliamson@chemos.io.
+            
             # Note: Customization required as the SDK generated didn't detected a file inside a multipart-form request body
             if 'file' in local_var_params['{{paramName}}'].to_dict(): # Added line
                 local_var_files = local_var_params['{{paramName}}'].to_dict() # Added line
