@@ -13,7 +13,7 @@
 
 from setuptools import setup, find_packages  # noqa: H301
 
-NAME = "openapi-client"
+NAME = "nexus-sdk"
 VERSION = "1.0.0"
 # To install the library, run the following
 #
@@ -30,7 +30,7 @@ setup(
     description="Atinary™ Nexus",
     author="Atinary™ Nexus",
     author_email="support@atinary.com",
-    url="/scientia.atinary.com/nexus",
+    url="",
     keywords=["OpenAPI", "OpenAPI-Generator", "Atinary™ Nexus"],
     install_requires=REQUIRES,
     packages=find_packages(exclude=["test", "tests"]),

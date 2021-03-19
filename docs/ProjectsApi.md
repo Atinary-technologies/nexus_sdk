@@ -1,4 +1,4 @@
-# openapi_client.ProjectsApi
+# nexus-sdk.ProjectsApi
 
 All URIs are relative to *https://scientia.atinary.com/nexus/api*
 
@@ -27,12 +27,12 @@ Create a new project by providing a project name. The user who calls this method
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import nexus-sdk
+from nexus-sdk.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     host = "https://scientia.atinary.com/nexus/api"
 )
 
@@ -42,7 +42,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure API key authorization: api_key
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
@@ -52,15 +52,15 @@ configuration = openapi_client.Configuration(
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # Configure Bearer authorization (JWT): tokens
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with nexus-sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ProjectsApi(api_client)
-    project_create_req = openapi_client.ProjectCreateReq() # ProjectCreateReq | Json object specifying the **project_name**. (optional)
+    api_instance = nexus-sdk.ProjectsApi(api_client)
+    project_create_req = nexus-sdk.ProjectCreateReq() # ProjectCreateReq | Json object specifying the **project_name**. (optional)
 
     try:
         # Create a new project
@@ -74,12 +74,12 @@ with openapi_client.ApiClient(configuration) as api_client:
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import nexus-sdk
+from nexus-sdk.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     host = "https://scientia.atinary.com/nexus/api"
 )
 
@@ -89,7 +89,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure API key authorization: api_key
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
@@ -99,15 +99,15 @@ configuration = openapi_client.Configuration(
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # Configure Bearer authorization (JWT): tokens
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with nexus-sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ProjectsApi(api_client)
-    project_create_req = openapi_client.ProjectCreateReq() # ProjectCreateReq | Json object specifying the **project_name**. (optional)
+    api_instance = nexus-sdk.ProjectsApi(api_client)
+    project_create_req = nexus-sdk.ProjectCreateReq() # ProjectCreateReq | Json object specifying the **project_name**. (optional)
 
     try:
         # Create a new project
@@ -159,12 +159,12 @@ Create an example project containing a text file with some basic instructions on
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import nexus-sdk
+from nexus-sdk.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     host = "https://scientia.atinary.com/nexus/api"
 )
 
@@ -174,7 +174,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure API key authorization: api_key
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
@@ -184,14 +184,14 @@ configuration = openapi_client.Configuration(
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # Configure Bearer authorization (JWT): tokens
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with nexus-sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ProjectsApi(api_client)
+    api_instance = nexus-sdk.ProjectsApi(api_client)
     
     try:
         # Create the tutorial project
@@ -205,12 +205,12 @@ with openapi_client.ApiClient(configuration) as api_client:
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import nexus-sdk
+from nexus-sdk.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     host = "https://scientia.atinary.com/nexus/api"
 )
 
@@ -220,7 +220,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure API key authorization: api_key
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
@@ -230,14 +230,14 @@ configuration = openapi_client.Configuration(
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # Configure Bearer authorization (JWT): tokens
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with nexus-sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ProjectsApi(api_client)
+    api_instance = nexus-sdk.ProjectsApi(api_client)
     
     try:
         # Create the tutorial project
@@ -286,12 +286,12 @@ Delete a project. The project deletion causes the deletion of all files and subs
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import nexus-sdk
+from nexus-sdk.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     host = "https://scientia.atinary.com/nexus/api"
 )
 
@@ -301,7 +301,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure API key authorization: api_key
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
@@ -311,14 +311,14 @@ configuration = openapi_client.Configuration(
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # Configure Bearer authorization (JWT): tokens
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with nexus-sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ProjectsApi(api_client)
+    api_instance = nexus-sdk.ProjectsApi(api_client)
     project_id = 'project_id_example' # str | ID assigned to the project once created in Atinary™ Nexus.
 
     try:
@@ -333,12 +333,12 @@ with openapi_client.ApiClient(configuration) as api_client:
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import nexus-sdk
+from nexus-sdk.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     host = "https://scientia.atinary.com/nexus/api"
 )
 
@@ -348,7 +348,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure API key authorization: api_key
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
@@ -358,14 +358,14 @@ configuration = openapi_client.Configuration(
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # Configure Bearer authorization (JWT): tokens
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with nexus-sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ProjectsApi(api_client)
+    api_instance = nexus-sdk.ProjectsApi(api_client)
     project_id = 'project_id_example' # str | ID assigned to the project once created in Atinary™ Nexus.
 
     try:
@@ -418,12 +418,12 @@ Get project information. List project id, project owner, members and creation da
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import nexus-sdk
+from nexus-sdk.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     host = "https://scientia.atinary.com/nexus/api"
 )
 
@@ -433,7 +433,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure API key authorization: api_key
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
@@ -443,14 +443,14 @@ configuration = openapi_client.Configuration(
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # Configure Bearer authorization (JWT): tokens
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with nexus-sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ProjectsApi(api_client)
+    api_instance = nexus-sdk.ProjectsApi(api_client)
     project_id = 'project_id_example' # str | ID assigned to the project once created in Atinary™ Nexus.
 
     try:
@@ -465,12 +465,12 @@ with openapi_client.ApiClient(configuration) as api_client:
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import nexus-sdk
+from nexus-sdk.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     host = "https://scientia.atinary.com/nexus/api"
 )
 
@@ -480,7 +480,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure API key authorization: api_key
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
@@ -490,14 +490,14 @@ configuration = openapi_client.Configuration(
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # Configure Bearer authorization (JWT): tokens
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with nexus-sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ProjectsApi(api_client)
+    api_instance = nexus-sdk.ProjectsApi(api_client)
     project_id = 'project_id_example' # str | ID assigned to the project once created in Atinary™ Nexus.
 
     try:
@@ -550,12 +550,12 @@ List individual project subscriptions.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import nexus-sdk
+from nexus-sdk.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     host = "https://scientia.atinary.com/nexus/api"
 )
 
@@ -565,7 +565,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure API key authorization: api_key
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
@@ -575,14 +575,14 @@ configuration = openapi_client.Configuration(
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # Configure Bearer authorization (JWT): tokens
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with nexus-sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ProjectsApi(api_client)
+    api_instance = nexus-sdk.ProjectsApi(api_client)
     
     try:
         # List project subscriptions
@@ -596,12 +596,12 @@ with openapi_client.ApiClient(configuration) as api_client:
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import nexus-sdk
+from nexus-sdk.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     host = "https://scientia.atinary.com/nexus/api"
 )
 
@@ -611,7 +611,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure API key authorization: api_key
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
@@ -621,14 +621,14 @@ configuration = openapi_client.Configuration(
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # Configure Bearer authorization (JWT): tokens
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with nexus-sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ProjectsApi(api_client)
+    api_instance = nexus-sdk.ProjectsApi(api_client)
     
     try:
         # List project subscriptions
@@ -676,12 +676,12 @@ Add users to a project. Note that only the **project owner** can add users to th
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import nexus-sdk
+from nexus-sdk.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     host = "https://scientia.atinary.com/nexus/api"
 )
 
@@ -691,7 +691,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure API key authorization: api_key
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
@@ -701,16 +701,16 @@ configuration = openapi_client.Configuration(
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # Configure Bearer authorization (JWT): tokens
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with nexus-sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ProjectsApi(api_client)
+    api_instance = nexus-sdk.ProjectsApi(api_client)
     project_id = 'project_id_example' # str | ID assigned to the project once created in Atinary™ Nexus.
-project_subscribe_req = openapi_client.ProjectSubscribeReq() # ProjectSubscribeReq | Json object containing the list of user **emails** to add to the project. (optional)
+project_subscribe_req = nexus-sdk.ProjectSubscribeReq() # ProjectSubscribeReq | Json object containing the list of user **emails** to add to the project. (optional)
 
     try:
         # Add users to a project
@@ -724,12 +724,12 @@ project_subscribe_req = openapi_client.ProjectSubscribeReq() # ProjectSubscribeR
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import nexus-sdk
+from nexus-sdk.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     host = "https://scientia.atinary.com/nexus/api"
 )
 
@@ -739,7 +739,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure API key authorization: api_key
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
@@ -749,16 +749,16 @@ configuration = openapi_client.Configuration(
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # Configure Bearer authorization (JWT): tokens
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with nexus-sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ProjectsApi(api_client)
+    api_instance = nexus-sdk.ProjectsApi(api_client)
     project_id = 'project_id_example' # str | ID assigned to the project once created in Atinary™ Nexus.
-project_subscribe_req = openapi_client.ProjectSubscribeReq() # ProjectSubscribeReq | Json object containing the list of user **emails** to add to the project. (optional)
+project_subscribe_req = nexus-sdk.ProjectSubscribeReq() # ProjectSubscribeReq | Json object containing the list of user **emails** to add to the project. (optional)
 
     try:
         # Add users to a project
@@ -811,12 +811,12 @@ Unsubscribe oneself from a project or unsubscribe members from a project. Note t
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import nexus-sdk
+from nexus-sdk.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     host = "https://scientia.atinary.com/nexus/api"
 )
 
@@ -826,7 +826,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure API key authorization: api_key
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
@@ -836,16 +836,16 @@ configuration = openapi_client.Configuration(
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # Configure Bearer authorization (JWT): tokens
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with nexus-sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ProjectsApi(api_client)
+    api_instance = nexus-sdk.ProjectsApi(api_client)
     project_id = 'project_id_example' # str | ID assigned to the project once created in Atinary™ Nexus.
-project_unsubscribe_req = openapi_client.ProjectUnsubscribeReq() # ProjectUnsubscribeReq | Json object containing the list of user **emails** to unsubscribe from the project. If this list is empty, then the caller is unsubscribed from the project. (optional)
+project_unsubscribe_req = nexus-sdk.ProjectUnsubscribeReq() # ProjectUnsubscribeReq | Json object containing the list of user **emails** to unsubscribe from the project. If this list is empty, then the caller is unsubscribed from the project. (optional)
 
     try:
         # Unsubscribe from a project
@@ -859,12 +859,12 @@ project_unsubscribe_req = openapi_client.ProjectUnsubscribeReq() # ProjectUnsubs
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import nexus-sdk
+from nexus-sdk.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     host = "https://scientia.atinary.com/nexus/api"
 )
 
@@ -874,7 +874,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure API key authorization: api_key
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
@@ -884,16 +884,16 @@ configuration = openapi_client.Configuration(
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # Configure Bearer authorization (JWT): tokens
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with nexus-sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ProjectsApi(api_client)
+    api_instance = nexus-sdk.ProjectsApi(api_client)
     project_id = 'project_id_example' # str | ID assigned to the project once created in Atinary™ Nexus.
-project_unsubscribe_req = openapi_client.ProjectUnsubscribeReq() # ProjectUnsubscribeReq | Json object containing the list of user **emails** to unsubscribe from the project. If this list is empty, then the caller is unsubscribed from the project. (optional)
+project_unsubscribe_req = nexus-sdk.ProjectUnsubscribeReq() # ProjectUnsubscribeReq | Json object containing the list of user **emails** to unsubscribe from the project. If this list is empty, then the caller is unsubscribed from the project. (optional)
 
     try:
         # Unsubscribe from a project
@@ -946,12 +946,12 @@ Update project name, description and owner
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import nexus-sdk
+from nexus-sdk.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     host = "https://scientia.atinary.com/nexus/api"
 )
 
@@ -961,7 +961,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure API key authorization: api_key
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
@@ -971,16 +971,16 @@ configuration = openapi_client.Configuration(
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # Configure Bearer authorization (JWT): tokens
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with nexus-sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ProjectsApi(api_client)
+    api_instance = nexus-sdk.ProjectsApi(api_client)
     project_id = 'project_id_example' # str | ID assigned to the project once created in Atinary™ Nexus.
-project_update_req = openapi_client.ProjectUpdateReq() # ProjectUpdateReq | Json object containing  **new_name**, **new_description** and/or **new_owner**. Note that only users subscribed to the project can be project owners. The project owner is the only one authorized to call this method. (optional)
+project_update_req = nexus-sdk.ProjectUpdateReq() # ProjectUpdateReq | Json object containing  **new_name**, **new_description** and/or **new_owner**. Note that only users subscribed to the project can be project owners. The project owner is the only one authorized to call this method. (optional)
 
     try:
         # Update project name, description and owner
@@ -994,12 +994,12 @@ project_update_req = openapi_client.ProjectUpdateReq() # ProjectUpdateReq | Json
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import nexus-sdk
+from nexus-sdk.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     host = "https://scientia.atinary.com/nexus/api"
 )
 
@@ -1009,7 +1009,7 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure API key authorization: api_key
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
@@ -1019,16 +1019,16 @@ configuration = openapi_client.Configuration(
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # Configure Bearer authorization (JWT): tokens
-configuration = openapi_client.Configuration(
+configuration = nexus-sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with nexus-sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ProjectsApi(api_client)
+    api_instance = nexus-sdk.ProjectsApi(api_client)
     project_id = 'project_id_example' # str | ID assigned to the project once created in Atinary™ Nexus.
-project_update_req = openapi_client.ProjectUpdateReq() # ProjectUpdateReq | Json object containing  **new_name**, **new_description** and/or **new_owner**. Note that only users subscribed to the project can be project owners. The project owner is the only one authorized to call this method. (optional)
+project_update_req = nexus-sdk.ProjectUpdateReq() # ProjectUpdateReq | Json object containing  **new_name**, **new_description** and/or **new_owner**. Note that only users subscribed to the project can be project owners. The project owner is the only one authorized to call this method. (optional)
 
     try:
         # Update project name, description and owner

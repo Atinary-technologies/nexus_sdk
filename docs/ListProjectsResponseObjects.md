@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **owner** | **str** | User email | 
 **files** | [**AvailableFilesSummary**](AvailableFilesSummary.md) |  | 
 **description** | **str** | Description of the project. | [optional] [default to '']
-**creation_date** | **datetime** | Entity creation date (UTC). | 
+**creation_date** | **str** | Entity creation date (UTC). | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

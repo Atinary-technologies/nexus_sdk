@@ -29,7 +29,7 @@ pip install git+https://github.com/atinary-technologies/nexus_sdk.git
 
 Then import the package:
 ```python
-import openapi_client
+import nexus-sdk
 ```
 
 ###### Option 2: Install via [Setuptools](http://pypi.python.org/pypi/setuptools).
@@ -41,7 +41,7 @@ python setup.py install --user
 
 Then import the package:
 ```python
-import openapi_client
+import nexus-sdk
 ```
 
 #### Running the Nexus SDK

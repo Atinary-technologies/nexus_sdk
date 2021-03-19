@@ -37,7 +37,7 @@ class ListFilesResponseObjects(object):
         'file_id': 'str',
         'name': 'str',
         'group_type': 'str',
-        'creation_date': 'datetime'
+        'creation_date': 'str'
     }
 
     attribute_map = {
@@ -170,7 +170,7 @@ class ListFilesResponseObjects(object):
         Entity creation date (UTC).  # noqa: E501
 
         :return: The creation_date of this ListFilesResponseObjects.  # noqa: E501
-        :rtype: datetime
+        :rtype: str
         """
         return self._creation_date
 
@@ -181,10 +181,19 @@ class ListFilesResponseObjects(object):
         Entity creation date (UTC).  # noqa: E501
 
         :param creation_date: The creation_date of this ListFilesResponseObjects.  # noqa: E501
-        :type: datetime
+        :type: str
         """
         if self.local_vars_configuration.client_side_validation and creation_date is None:  # noqa: E501
             raise ValueError("Invalid value for `creation_date`, must not be `None`")  # noqa: E501
+        if (self.local_vars_configuration.client_side_validation and
+                creation_date is not None and len(creation_date) > 27):
+            raise ValueError("Invalid value for `creation_date`, length must be less than or equal to `27`")  # noqa: E501
+        if (self.local_vars_configuration.client_side_validation and
+                creation_date is not None and len(creation_date) < 19):
+            raise ValueError("Invalid value for `creation_date`, length must be greater than or equal to `19`")  # noqa: E501
+        if (self.local_vars_configuration.client_side_validation and
+                creation_date is not None and not re.search(r'^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{6}Z?$', creation_date)):  # noqa: E501
+            raise ValueError(r"Invalid value for `creation_date`, must be a follow pattern or equal to `/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{6}Z?$/`")  # noqa: E501
 
         self._creation_date = creation_date
 
