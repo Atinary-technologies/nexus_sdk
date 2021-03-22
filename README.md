@@ -29,7 +29,7 @@ pip install git+https://github.com/atinary-technologies/nexus_sdk.git
 
 Then import the package:
 ```python
-import nexus-sdk
+import nexus_sdk
 ```
 
 ###### Option 2: Install via [Setuptools](http://pypi.python.org/pypi/setuptools).
@@ -41,7 +41,7 @@ python setup.py install --user
 
 Then import the package:
 ```python
-import nexus-sdk
+import nexus_sdk
 ```
 
 #### Running the Nexus SDK
@@ -49,14 +49,14 @@ import nexus-sdk
 Please follow the [installation procedure](#installation--usage) and then run the following:
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import nexus_sdk
+from nexus_sdk.rest import ApiException
 
 
 # Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # Configure API key authorization: api_key
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = nexus_sdk.Configuration(
     host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
@@ -65,16 +65,16 @@ configuration = openapi_client.Configuration(
 
 
 # To start managing your projects, enter a context with an instance of the API client for Projects
-with openapi_client.ApiClient(configuration) as api_client:
+with nexus_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    projects = openapi_client.ProjectsApi(api_client)
+    projects = nexus_sdk.ProjectsApi(api_client)
     try:
         # List project subscriptions
         api_response = projects.list_projects()
         print("\nList of projects before project creation: \n", api_response.objects)
 
         # Create a new project
-        project_create_req = openapi_client.ProjectCreateReq(
+        project_create_req = nexus_sdk.ProjectCreateReq(
                                    project_name="project_1",
                                    project_description="My first project"
                               )
@@ -87,7 +87,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         print("\nList of projects after project creation: \n", api_response.objects)
 
         # Subscribe users to a project (only available to project owner)
-        project_subscribe_req = openapi_client.ProjectSubscribeReq(email_list=['email1@domain.com', 'email2@domain.com'])
+        project_subscribe_req = nexus_sdk.ProjectSubscribeReq(email_list=['email1@domain.com', 'email2@domain.com'])
         projects.subscribe_users(project_id, project_subscribe_req=project_subscribe_req)
 
         # Get project details
@@ -99,9 +99,9 @@ with openapi_client.ApiClient(configuration) as api_client:
 
 
 # To start managing your files, enter a context with an instance of the API client for Files
-with openapi_client.ApiClient(configuration) as api_client:
+with nexus_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    files = openapi_client.FilesApi(api_client)
+    files = nexus_sdk.FilesApi(api_client)
     try:
         # List files associated to project with project_id
         api_response = files.list_files(project_id=project_id)
@@ -109,7 +109,7 @@ with openapi_client.ApiClient(configuration) as api_client:
 
         # Upload a file
         group_type = 'parameters'
-        inline_object = openapi_client.InlineObject(file='data/wine_data.csv')
+        inline_object = nexus_sdk.InlineObject(file='data/wine_data.csv')
         api_response = files.upload_file(project_id, group_type, inline_object=inline_object)
         file_id = api_response.object.id # String with file id
 
@@ -130,8 +130,8 @@ with openapi_client.ApiClient(configuration) as api_client:
 
 # To finalize the example, we delete the project by using an instance of the API client for Projects.
 # Note that we can delete the project in this case because there are no subscriptions or files associated to it.
-with openapi_client.ApiClient(configuration) as api_client:
-    projects = openapi_client.ProjectsApi(api_client)
+with nexus_sdk.ApiClient(configuration) as api_client:
+    projects = nexus_sdk.ProjectsApi(api_client)
     try:
 
         # Delete project (only available to project owner)

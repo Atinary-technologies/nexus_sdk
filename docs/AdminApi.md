@@ -1,4 +1,4 @@
-# nexus-sdk.AdminApi
+# nexus_sdk.AdminApi
 
 All URIs are relative to *https://scientia.atinary.com/nexus/api*
 
@@ -20,12 +20,12 @@ Get service configuration information.
 ```python
 from __future__ import print_function
 import time
-import nexus-sdk
-from nexus-sdk.rest import ApiException
+import nexus_sdk
+from nexus_sdk.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = nexus-sdk.Configuration(
+configuration = nexus_sdk.Configuration(
     host = "https://scientia.atinary.com/nexus/api"
 )
 
@@ -35,7 +35,7 @@ configuration = nexus-sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure API key authorization: api_key
-configuration = nexus-sdk.Configuration(
+configuration = nexus_sdk.Configuration(
     host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
@@ -45,14 +45,14 @@ configuration = nexus-sdk.Configuration(
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # Configure Bearer authorization (JWT): tokens
-configuration = nexus-sdk.Configuration(
+configuration = nexus_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with nexus-sdk.ApiClient(configuration) as api_client:
+with nexus_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = nexus-sdk.AdminApi(api_client)
+    api_instance = nexus_sdk.AdminApi(api_client)
     
     try:
         # Service information.
@@ -66,12 +66,12 @@ with nexus-sdk.ApiClient(configuration) as api_client:
 ```python
 from __future__ import print_function
 import time
-import nexus-sdk
-from nexus-sdk.rest import ApiException
+import nexus_sdk
+from nexus_sdk.rest import ApiException
 from pprint import pprint
 # Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = nexus-sdk.Configuration(
+configuration = nexus_sdk.Configuration(
     host = "https://scientia.atinary.com/nexus/api"
 )
 
@@ -81,7 +81,7 @@ configuration = nexus-sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure API key authorization: api_key
-configuration = nexus-sdk.Configuration(
+configuration = nexus_sdk.Configuration(
     host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
@@ -91,14 +91,14 @@ configuration = nexus-sdk.Configuration(
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # Configure Bearer authorization (JWT): tokens
-configuration = nexus-sdk.Configuration(
+configuration = nexus_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with nexus-sdk.ApiClient(configuration) as api_client:
+with nexus_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = nexus-sdk.AdminApi(api_client)
+    api_instance = nexus_sdk.AdminApi(api_client)
     
     try:
         # Service information.
