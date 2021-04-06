@@ -1,6 +1,6 @@
-# openapi_client.AdminApi
+# nexus_sdk.AdminApi
 
-All URIs are relative to *https://scientia.chemos.io/web_portal/api*
+All URIs are relative to *https://scientia.atinary.com/nexus/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,13 +20,13 @@ Get service configuration information.
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import nexus_sdk
+from nexus_sdk.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.chemos.io/web_portal/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api"
+configuration = nexus_sdk.Configuration(
+    host = "https://scientia.atinary.com/nexus/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -35,8 +35,8 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure API key authorization: api_key
-configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api",
+configuration = nexus_sdk.Configuration(
+    host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -45,14 +45,14 @@ configuration = openapi_client.Configuration(
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # Configure Bearer authorization (JWT): tokens
-configuration = openapi_client.Configuration(
+configuration = nexus_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with nexus_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AdminApi(api_client)
+    api_instance = nexus_sdk.AdminApi(api_client)
     
     try:
         # Service information.
@@ -66,13 +66,13 @@ with openapi_client.ApiClient(configuration) as api_client:
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import nexus_sdk
+from nexus_sdk.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.chemos.io/web_portal/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api"
+configuration = nexus_sdk.Configuration(
+    host = "https://scientia.atinary.com/nexus/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -81,8 +81,8 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure API key authorization: api_key
-configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api",
+configuration = nexus_sdk.Configuration(
+    host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -91,14 +91,14 @@ configuration = openapi_client.Configuration(
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # Configure Bearer authorization (JWT): tokens
-configuration = openapi_client.Configuration(
+configuration = nexus_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with nexus_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AdminApi(api_client)
+    api_instance = nexus_sdk.AdminApi(api_client)
     
     try:
         # Service information.

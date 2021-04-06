@@ -1,6 +1,6 @@
-# openapi_client.FilesApi
+# nexus_sdk.FilesApi
 
-All URIs are relative to *https://scientia.chemos.io/web_portal/api*
+All URIs are relative to *https://scientia.atinary.com/nexus/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -23,13 +23,13 @@ Delete a specific file.  Note that every file belongs to a project and only user
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import nexus_sdk
+from nexus_sdk.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.chemos.io/web_portal/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api"
+configuration = nexus_sdk.Configuration(
+    host = "https://scientia.atinary.com/nexus/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -38,8 +38,8 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure API key authorization: api_key
-configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api",
+configuration = nexus_sdk.Configuration(
+    host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -48,14 +48,14 @@ configuration = openapi_client.Configuration(
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # Configure Bearer authorization (JWT): tokens
-configuration = openapi_client.Configuration(
+configuration = nexus_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with nexus_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.FilesApi(api_client)
+    api_instance = nexus_sdk.FilesApi(api_client)
     file_id = 'file_id_example' # str | ID assigned to the file once it is uploaded.
 
     try:
@@ -70,13 +70,13 @@ with openapi_client.ApiClient(configuration) as api_client:
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import nexus_sdk
+from nexus_sdk.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.chemos.io/web_portal/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api"
+configuration = nexus_sdk.Configuration(
+    host = "https://scientia.atinary.com/nexus/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -85,8 +85,8 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure API key authorization: api_key
-configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api",
+configuration = nexus_sdk.Configuration(
+    host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -95,14 +95,14 @@ configuration = openapi_client.Configuration(
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # Configure Bearer authorization (JWT): tokens
-configuration = openapi_client.Configuration(
+configuration = nexus_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with nexus_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.FilesApi(api_client)
+    api_instance = nexus_sdk.FilesApi(api_client)
     file_id = 'file_id_example' # str | ID assigned to the file once it is uploaded.
 
     try:
@@ -155,13 +155,13 @@ Download a specific file. Note that every file belongs to a project and only use
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import nexus_sdk
+from nexus_sdk.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.chemos.io/web_portal/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api"
+configuration = nexus_sdk.Configuration(
+    host = "https://scientia.atinary.com/nexus/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -170,8 +170,8 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure API key authorization: api_key
-configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api",
+configuration = nexus_sdk.Configuration(
+    host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -180,14 +180,14 @@ configuration = openapi_client.Configuration(
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # Configure Bearer authorization (JWT): tokens
-configuration = openapi_client.Configuration(
+configuration = nexus_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with nexus_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.FilesApi(api_client)
+    api_instance = nexus_sdk.FilesApi(api_client)
     file_id = 'file_id_example' # str | ID assigned to the file once it is uploaded.
 
     try:
@@ -202,13 +202,13 @@ with openapi_client.ApiClient(configuration) as api_client:
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import nexus_sdk
+from nexus_sdk.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.chemos.io/web_portal/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api"
+configuration = nexus_sdk.Configuration(
+    host = "https://scientia.atinary.com/nexus/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -217,8 +217,8 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure API key authorization: api_key
-configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api",
+configuration = nexus_sdk.Configuration(
+    host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -227,14 +227,14 @@ configuration = openapi_client.Configuration(
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # Configure Bearer authorization (JWT): tokens
-configuration = openapi_client.Configuration(
+configuration = nexus_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with nexus_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.FilesApi(api_client)
+    api_instance = nexus_sdk.FilesApi(api_client)
     file_id = 'file_id_example' # str | ID assigned to the file once it is uploaded.
 
     try:
@@ -287,13 +287,13 @@ List available files for a specific project. Note that only users subscribed to 
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import nexus_sdk
+from nexus_sdk.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.chemos.io/web_portal/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api"
+configuration = nexus_sdk.Configuration(
+    host = "https://scientia.atinary.com/nexus/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -302,8 +302,8 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure API key authorization: api_key
-configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api",
+configuration = nexus_sdk.Configuration(
+    host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -312,15 +312,15 @@ configuration = openapi_client.Configuration(
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # Configure Bearer authorization (JWT): tokens
-configuration = openapi_client.Configuration(
+configuration = nexus_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with nexus_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.FilesApi(api_client)
-    project_id = 'project_id_example' # str | **Required** ID assigned to the project once created in Web Portal. (optional)
+    api_instance = nexus_sdk.FilesApi(api_client)
+    project_id = 'project_id_example' # str | **Required** ID assigned to the project once created in Atinary™ Nexus. (optional)
 group_type = 'group_type_example' # str | String indicating how the file is classified. Available values are *parameters*, *properties* or *other*. (optional)
 
     try:
@@ -335,13 +335,13 @@ group_type = 'group_type_example' # str | String indicating how the file is clas
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import nexus_sdk
+from nexus_sdk.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.chemos.io/web_portal/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api"
+configuration = nexus_sdk.Configuration(
+    host = "https://scientia.atinary.com/nexus/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -350,8 +350,8 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure API key authorization: api_key
-configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api",
+configuration = nexus_sdk.Configuration(
+    host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -360,15 +360,15 @@ configuration = openapi_client.Configuration(
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # Configure Bearer authorization (JWT): tokens
-configuration = openapi_client.Configuration(
+configuration = nexus_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with nexus_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.FilesApi(api_client)
-    project_id = 'project_id_example' # str | **Required** ID assigned to the project once created in Web Portal. (optional)
+    api_instance = nexus_sdk.FilesApi(api_client)
+    project_id = 'project_id_example' # str | **Required** ID assigned to the project once created in Atinary™ Nexus. (optional)
 group_type = 'group_type_example' # str | String indicating how the file is classified. Available values are *parameters*, *properties* or *other*. (optional)
 
     try:
@@ -383,7 +383,7 @@ group_type = 'group_type_example' # str | String indicating how the file is clas
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **project_id** | **str**| **Required** ID assigned to the project once created in Web Portal. | [optional] 
+ **project_id** | **str**| **Required** ID assigned to the project once created in Atinary™ Nexus. | [optional] 
  **group_type** | **str**| String indicating how the file is classified. Available values are *parameters*, *properties* or *other*. | [optional] 
 
 ### Return type
@@ -422,13 +422,13 @@ Upload a file under a specific project. Note that only users subscribed to the p
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import nexus_sdk
+from nexus_sdk.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.chemos.io/web_portal/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api"
+configuration = nexus_sdk.Configuration(
+    host = "https://scientia.atinary.com/nexus/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -437,8 +437,8 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure API key authorization: api_key
-configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api",
+configuration = nexus_sdk.Configuration(
+    host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -447,17 +447,17 @@ configuration = openapi_client.Configuration(
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # Configure Bearer authorization (JWT): tokens
-configuration = openapi_client.Configuration(
+configuration = nexus_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with nexus_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.FilesApi(api_client)
-    project_id = 'project_id_example' # str | ID assigned to the project once created in Web Portal.
+    api_instance = nexus_sdk.FilesApi(api_client)
+    project_id = 'project_id_example' # str | ID assigned to the project once created in Atinary™ Nexus.
 group_type = 'group_type_example' # str | String indicating how the file is classified. Available values are *parameters*, *properties* or *other*.
-inline_object = openapi_client.InlineObject() # InlineObject |  (optional)
+inline_object = nexus_sdk.InlineObject() # InlineObject |  (optional)
 
     try:
         # Upload a file under a project
@@ -471,13 +471,13 @@ inline_object = openapi_client.InlineObject() # InlineObject |  (optional)
 ```python
 from __future__ import print_function
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import nexus_sdk
+from nexus_sdk.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.chemos.io/web_portal/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api"
+configuration = nexus_sdk.Configuration(
+    host = "https://scientia.atinary.com/nexus/api"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -486,8 +486,8 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure API key authorization: api_key
-configuration = openapi_client.Configuration(
-    host = "https://scientia.chemos.io/web_portal/api",
+configuration = nexus_sdk.Configuration(
+    host = "https://scientia.atinary.com/nexus/api",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -496,17 +496,17 @@ configuration = openapi_client.Configuration(
 # configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
 
 # Configure Bearer authorization (JWT): tokens
-configuration = openapi_client.Configuration(
+configuration = nexus_sdk.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with nexus_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.FilesApi(api_client)
-    project_id = 'project_id_example' # str | ID assigned to the project once created in Web Portal.
+    api_instance = nexus_sdk.FilesApi(api_client)
+    project_id = 'project_id_example' # str | ID assigned to the project once created in Atinary™ Nexus.
 group_type = 'group_type_example' # str | String indicating how the file is classified. Available values are *parameters*, *properties* or *other*.
-inline_object = openapi_client.InlineObject() # InlineObject |  (optional)
+inline_object = nexus_sdk.InlineObject() # InlineObject |  (optional)
 
     try:
         # Upload a file under a project
@@ -520,7 +520,7 @@ inline_object = openapi_client.InlineObject() # InlineObject |  (optional)
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **project_id** | **str**| ID assigned to the project once created in Web Portal. | 
+ **project_id** | **str**| ID assigned to the project once created in Atinary™ Nexus. | 
  **group_type** | **str**| String indicating how the file is classified. Available values are *parameters*, *properties* or *other*. | 
  **inline_object** | [**InlineObject**](InlineObject.md)|  | [optional] 
 

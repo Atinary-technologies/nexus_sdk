@@ -1,19 +1,23 @@
 # Changelog
+
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## unreleased
+
+## In progress
 
 ### Added
-- Add a create Tutorial project call.
 
 ### Changed
-
+- Rename python package from openapi-client to nexus_sdk
+- Remove datetime format in OpenApi definition.
 
 ### Removed
 
-## [1.0.0] - 2020-08-24
+### Fixes
 
-Initial release.
+## [0.4.0] - 2020-01-14
+
+- Rebranding to Nexus
