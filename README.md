@@ -143,7 +143,7 @@ with openapi_client.ApiClient(configuration) as api_client:
 
 ### Documentation for API Endpoints
 
-All URIs are relative to *http://localhost:80*
+All URIs are relative to *https://scientia.atinary.com/nexus/api/latest*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------

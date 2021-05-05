@@ -1,6 +1,6 @@
 # nexus_sdk.ProjectsApi
 
-All URIs are relative to *https://scientia.atinary.com/nexus/api*
+All URIs are relative to *https://scientia.atinary.com/nexus/api/latest*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -30,10 +30,10 @@ import time
 import nexus_sdk
 from nexus_sdk.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api/latest
 # See configuration.py for a list of all supported configuration parameters.
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api"
+    host = "https://scientia.atinary.com/nexus/api/latest"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -43,7 +43,7 @@ configuration = nexus_sdk.Configuration(
 
 # Configure API key authorization: api_key
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api",
+    host = "https://scientia.atinary.com/nexus/api/latest",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -77,10 +77,10 @@ import time
 import nexus_sdk
 from nexus_sdk.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api/latest
 # See configuration.py for a list of all supported configuration parameters.
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api"
+    host = "https://scientia.atinary.com/nexus/api/latest"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -90,7 +90,7 @@ configuration = nexus_sdk.Configuration(
 
 # Configure API key authorization: api_key
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api",
+    host = "https://scientia.atinary.com/nexus/api/latest",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -162,10 +162,10 @@ import time
 import nexus_sdk
 from nexus_sdk.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api/latest
 # See configuration.py for a list of all supported configuration parameters.
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api"
+    host = "https://scientia.atinary.com/nexus/api/latest"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -175,7 +175,7 @@ configuration = nexus_sdk.Configuration(
 
 # Configure API key authorization: api_key
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api",
+    host = "https://scientia.atinary.com/nexus/api/latest",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -208,10 +208,10 @@ import time
 import nexus_sdk
 from nexus_sdk.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api/latest
 # See configuration.py for a list of all supported configuration parameters.
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api"
+    host = "https://scientia.atinary.com/nexus/api/latest"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -221,7 +221,7 @@ configuration = nexus_sdk.Configuration(
 
 # Configure API key authorization: api_key
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api",
+    host = "https://scientia.atinary.com/nexus/api/latest",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -289,10 +289,10 @@ import time
 import nexus_sdk
 from nexus_sdk.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api/latest
 # See configuration.py for a list of all supported configuration parameters.
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api"
+    host = "https://scientia.atinary.com/nexus/api/latest"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -302,7 +302,7 @@ configuration = nexus_sdk.Configuration(
 
 # Configure API key authorization: api_key
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api",
+    host = "https://scientia.atinary.com/nexus/api/latest",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -336,10 +336,10 @@ import time
 import nexus_sdk
 from nexus_sdk.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api/latest
 # See configuration.py for a list of all supported configuration parameters.
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api"
+    host = "https://scientia.atinary.com/nexus/api/latest"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -349,7 +349,7 @@ configuration = nexus_sdk.Configuration(
 
 # Configure API key authorization: api_key
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api",
+    host = "https://scientia.atinary.com/nexus/api/latest",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -421,10 +421,10 @@ import time
 import nexus_sdk
 from nexus_sdk.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api/latest
 # See configuration.py for a list of all supported configuration parameters.
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api"
+    host = "https://scientia.atinary.com/nexus/api/latest"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -434,7 +434,7 @@ configuration = nexus_sdk.Configuration(
 
 # Configure API key authorization: api_key
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api",
+    host = "https://scientia.atinary.com/nexus/api/latest",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -468,10 +468,10 @@ import time
 import nexus_sdk
 from nexus_sdk.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api/latest
 # See configuration.py for a list of all supported configuration parameters.
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api"
+    host = "https://scientia.atinary.com/nexus/api/latest"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -481,7 +481,7 @@ configuration = nexus_sdk.Configuration(
 
 # Configure API key authorization: api_key
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api",
+    host = "https://scientia.atinary.com/nexus/api/latest",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -553,10 +553,10 @@ import time
 import nexus_sdk
 from nexus_sdk.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api/latest
 # See configuration.py for a list of all supported configuration parameters.
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api"
+    host = "https://scientia.atinary.com/nexus/api/latest"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -566,7 +566,7 @@ configuration = nexus_sdk.Configuration(
 
 # Configure API key authorization: api_key
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api",
+    host = "https://scientia.atinary.com/nexus/api/latest",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -599,10 +599,10 @@ import time
 import nexus_sdk
 from nexus_sdk.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api/latest
 # See configuration.py for a list of all supported configuration parameters.
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api"
+    host = "https://scientia.atinary.com/nexus/api/latest"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -612,7 +612,7 @@ configuration = nexus_sdk.Configuration(
 
 # Configure API key authorization: api_key
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api",
+    host = "https://scientia.atinary.com/nexus/api/latest",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -679,10 +679,10 @@ import time
 import nexus_sdk
 from nexus_sdk.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api/latest
 # See configuration.py for a list of all supported configuration parameters.
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api"
+    host = "https://scientia.atinary.com/nexus/api/latest"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -692,7 +692,7 @@ configuration = nexus_sdk.Configuration(
 
 # Configure API key authorization: api_key
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api",
+    host = "https://scientia.atinary.com/nexus/api/latest",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -727,10 +727,10 @@ import time
 import nexus_sdk
 from nexus_sdk.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api/latest
 # See configuration.py for a list of all supported configuration parameters.
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api"
+    host = "https://scientia.atinary.com/nexus/api/latest"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -740,7 +740,7 @@ configuration = nexus_sdk.Configuration(
 
 # Configure API key authorization: api_key
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api",
+    host = "https://scientia.atinary.com/nexus/api/latest",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -814,10 +814,10 @@ import time
 import nexus_sdk
 from nexus_sdk.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api/latest
 # See configuration.py for a list of all supported configuration parameters.
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api"
+    host = "https://scientia.atinary.com/nexus/api/latest"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -827,7 +827,7 @@ configuration = nexus_sdk.Configuration(
 
 # Configure API key authorization: api_key
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api",
+    host = "https://scientia.atinary.com/nexus/api/latest",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -862,10 +862,10 @@ import time
 import nexus_sdk
 from nexus_sdk.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api/latest
 # See configuration.py for a list of all supported configuration parameters.
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api"
+    host = "https://scientia.atinary.com/nexus/api/latest"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -875,7 +875,7 @@ configuration = nexus_sdk.Configuration(
 
 # Configure API key authorization: api_key
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api",
+    host = "https://scientia.atinary.com/nexus/api/latest",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -949,10 +949,10 @@ import time
 import nexus_sdk
 from nexus_sdk.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api/latest
 # See configuration.py for a list of all supported configuration parameters.
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api"
+    host = "https://scientia.atinary.com/nexus/api/latest"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -962,7 +962,7 @@ configuration = nexus_sdk.Configuration(
 
 # Configure API key authorization: api_key
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api",
+    host = "https://scientia.atinary.com/nexus/api/latest",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
@@ -997,10 +997,10 @@ import time
 import nexus_sdk
 from nexus_sdk.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api/latest
 # See configuration.py for a list of all supported configuration parameters.
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api"
+    host = "https://scientia.atinary.com/nexus/api/latest"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -1010,7 +1010,7 @@ configuration = nexus_sdk.Configuration(
 
 # Configure API key authorization: api_key
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api",
+    host = "https://scientia.atinary.com/nexus/api/latest",
     api_key = {
         'X-API-KEY': 'YOUR_API_KEY'
     }
