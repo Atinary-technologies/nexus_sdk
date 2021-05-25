@@ -1,4 +1,4 @@
-# ListProjectsResponseObjects
+# AvailableProject
 
 ## Properties
 Name | Type | Description | Notes

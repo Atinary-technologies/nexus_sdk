@@ -1,4 +1,4 @@
-# ListFilesResponseObjects
+# AvailableFile
 
 ## Properties
 Name | Type | Description | Notes

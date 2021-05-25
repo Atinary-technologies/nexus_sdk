@@ -282,8 +282,8 @@ class ProjectDetail(object):
                 creation_date is not None and len(creation_date) > 27):
             raise ValueError("Invalid value for `creation_date`, length must be less than or equal to `27`")  # noqa: E501
         if (self.local_vars_configuration.client_side_validation and
-                creation_date is not None and len(creation_date) < 19):
-            raise ValueError("Invalid value for `creation_date`, length must be greater than or equal to `19`")  # noqa: E501
+                creation_date is not None and len(creation_date) < 26):
+            raise ValueError("Invalid value for `creation_date`, length must be greater than or equal to `26`")  # noqa: E501
         if (self.local_vars_configuration.client_side_validation and
                 creation_date is not None and not re.search(r'^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{6}Z?$', creation_date)):  # noqa: E501
             raise ValueError(r"Invalid value for `creation_date`, must be a follow pattern or equal to `/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{6}Z?$/`")  # noqa: E501

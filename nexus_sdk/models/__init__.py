@@ -15,15 +15,15 @@
 from __future__ import absolute_import
 
 # import models into model package
+from nexus_sdk.models.available_file import AvailableFile
 from nexus_sdk.models.available_files_summary import AvailableFilesSummary
+from nexus_sdk.models.available_project import AvailableProject
 from nexus_sdk.models.create_project_response import CreateProjectResponse
 from nexus_sdk.models.create_project_response_object import CreateProjectResponseObject
 from nexus_sdk.models.generic_response import GenericResponse
 from nexus_sdk.models.inline_object import InlineObject
 from nexus_sdk.models.list_files_response import ListFilesResponse
-from nexus_sdk.models.list_files_response_objects import ListFilesResponseObjects
 from nexus_sdk.models.list_projects_response import ListProjectsResponse
-from nexus_sdk.models.list_projects_response_objects import ListProjectsResponseObjects
 from nexus_sdk.models.project_create_req import ProjectCreateReq
 from nexus_sdk.models.project_detail import ProjectDetail
 from nexus_sdk.models.project_detail_response import ProjectDetailResponse

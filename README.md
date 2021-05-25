@@ -143,7 +143,7 @@ with nexus_sdk.ApiClient(configuration) as api_client:
 
 ### Documentation for API Endpoints
 
-All URIs are relative to *http://localhost:80*
+All URIs are relative to *https://scientia.atinary.com/nexus/api/latest*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
@@ -164,15 +164,15 @@ Class | Method | HTTP request | Description
 
 ### Documentation For Models
 
+ - [AvailableFile](docs/AvailableFile.md)
  - [AvailableFilesSummary](docs/AvailableFilesSummary.md)
+ - [AvailableProject](docs/AvailableProject.md)
  - [CreateProjectResponse](docs/CreateProjectResponse.md)
  - [CreateProjectResponseObject](docs/CreateProjectResponseObject.md)
  - [GenericResponse](docs/GenericResponse.md)
  - [InlineObject](docs/InlineObject.md)
  - [ListFilesResponse](docs/ListFilesResponse.md)
- - [ListFilesResponseObjects](docs/ListFilesResponseObjects.md)
  - [ListProjectsResponse](docs/ListProjectsResponse.md)
- - [ListProjectsResponseObjects](docs/ListProjectsResponseObjects.md)
  - [ProjectCreateReq](docs/ProjectCreateReq.md)
  - [ProjectDetail](docs/ProjectDetail.md)
  - [ProjectDetailResponse](docs/ProjectDetailResponse.md)

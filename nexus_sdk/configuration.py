@@ -75,7 +75,7 @@ conf = nexus_sdk.Configuration(
 
     _default = None
 
-    def __init__(self, host="http://localhost:80",
+    def __init__(self, host="https://scientia.atinary.com/nexus/api/latest",
                  api_key=None, api_key_prefix=None,
                  username=None, password=None,
                  discard_unknown_keys=False,
@@ -374,12 +374,16 @@ conf = nexus_sdk.Configuration(
         """
         return [
             {
-                'url': "http://localhost:80",
-                'description': "Local Atinary™ Nexus Server",
+                'url': "https://scientia.atinary.com/nexus/api/latest/",
+                'description': "Production server",
             },
             {
-                'url': "https://scientia.atinary.com/nexus/api",
-                'description': "Atinary™ Nexus Server",
+                'url': "http://staging.scientia.atinary.com/nexus/api/latest/",
+                'description': "Integration server",
+            },
+            {
+                'url': "http://localhost/api/1.0",
+                'description': "local server",
             }
         ]
 

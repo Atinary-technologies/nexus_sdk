@@ -36,7 +36,7 @@ class ListFilesResponse(object):
     openapi_types = {
         'request_id': 'str',
         'result': 'Result',
-        'objects': 'list[ListFilesResponseObjects]'
+        'objects': 'list[AvailableFile]'
     }
 
     attribute_map = {
@@ -123,7 +123,7 @@ class ListFilesResponse(object):
 
 
         :return: The objects of this ListFilesResponse.  # noqa: E501
-        :rtype: list[ListFilesResponseObjects]
+        :rtype: list[AvailableFile]
         """
         return self._objects
 
@@ -133,7 +133,7 @@ class ListFilesResponse(object):
 
 
         :param objects: The objects of this ListFilesResponse.  # noqa: E501
-        :type: list[ListFilesResponseObjects]
+        :type: list[AvailableFile]
         """
         if self.local_vars_configuration.client_side_validation and objects is None:  # noqa: E501
             raise ValueError("Invalid value for `objects`, must not be `None`")  # noqa: E501
