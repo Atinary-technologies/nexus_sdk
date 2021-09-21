@@ -382,7 +382,7 @@ conf = nexus_sdk.Configuration(
                 'description': "Integration server",
             },
             {
-                'url': "http://localhost/api/1.0",
+                'url': "http://localhost/api/1.1",
                 'description': "local server",
             }
         ]

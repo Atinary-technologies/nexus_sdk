@@ -19,7 +19,6 @@ from nexus_sdk.models.available_file import AvailableFile
 from nexus_sdk.models.available_files_summary import AvailableFilesSummary
 from nexus_sdk.models.available_project import AvailableProject
 from nexus_sdk.models.create_project_response import CreateProjectResponse
-from nexus_sdk.models.create_project_response_object import CreateProjectResponseObject
 from nexus_sdk.models.generic_response import GenericResponse
 from nexus_sdk.models.inline_object import InlineObject
 from nexus_sdk.models.list_files_response import ListFilesResponse
@@ -34,4 +33,3 @@ from nexus_sdk.models.result import Result
 from nexus_sdk.models.service_info import ServiceInfo
 from nexus_sdk.models.service_info_response import ServiceInfoResponse
 from nexus_sdk.models.upload_response import UploadResponse
-from nexus_sdk.models.upload_response_object import UploadResponseObject

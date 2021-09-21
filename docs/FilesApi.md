@@ -5,6 +5,7 @@ All URIs are relative to *https://scientia.atinary.com/nexus/api/latest*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**delete_file**](FilesApi.md#delete_file) | **DELETE** /Files/{file_id} | Delete a file
+[**delete_files**](FilesApi.md#delete_files) | **DELETE** /Files | 
 [**download_file**](FilesApi.md#download_file) | **GET** /Files/{file_id} | Download a file
 [**list_files**](FilesApi.md#list_files) | **GET** /Files | List available files for a project
 [**upload_file**](FilesApi.md#upload_file) | **POST** /Files | Upload a file under a project
@@ -139,6 +140,138 @@ Name | Type | Description  | Notes
 **401** | Unauthorized |  -  |
 **403** | Forbidden |  -  |
 **0** | Unexpected error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **delete_files**
+> GenericResponse delete_files(project_id=project_id, file_ids=file_ids)
+
+
+
+Delete several files in a project.
+
+### Example
+
+* Api Key Authentication (api_key):
+```python
+from __future__ import print_function
+import time
+import nexus_sdk
+from nexus_sdk.rest import ApiException
+from pprint import pprint
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api/latest
+# See configuration.py for a list of all supported configuration parameters.
+configuration = nexus_sdk.Configuration(
+    host = "https://scientia.atinary.com/nexus/api/latest"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key
+configuration = nexus_sdk.Configuration(
+    host = "https://scientia.atinary.com/nexus/api/latest",
+    api_key = {
+        'X-API-KEY': 'YOUR_API_KEY'
+    }
+)
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
+
+# Configure Bearer authorization (JWT): tokens
+configuration = nexus_sdk.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with nexus_sdk.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = nexus_sdk.FilesApi(api_client)
+    project_id = 'project_id_example' # str | **Required** ID assigned to the project once created in Atinary™ Nexus. (optional)
+file_ids = ['file_ids_example'] # list[str] | List of file identifiers to query (optional)
+
+    try:
+        api_response = api_instance.delete_files(project_id=project_id, file_ids=file_ids)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling FilesApi->delete_files: %s\n" % e)
+```
+
+* Bearer (JWT) Authentication (tokens):
+```python
+from __future__ import print_function
+import time
+import nexus_sdk
+from nexus_sdk.rest import ApiException
+from pprint import pprint
+# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api/latest
+# See configuration.py for a list of all supported configuration parameters.
+configuration = nexus_sdk.Configuration(
+    host = "https://scientia.atinary.com/nexus/api/latest"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: api_key
+configuration = nexus_sdk.Configuration(
+    host = "https://scientia.atinary.com/nexus/api/latest",
+    api_key = {
+        'X-API-KEY': 'YOUR_API_KEY'
+    }
+)
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
+
+# Configure Bearer authorization (JWT): tokens
+configuration = nexus_sdk.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with nexus_sdk.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = nexus_sdk.FilesApi(api_client)
+    project_id = 'project_id_example' # str | **Required** ID assigned to the project once created in Atinary™ Nexus. (optional)
+file_ids = ['file_ids_example'] # list[str] | List of file identifiers to query (optional)
+
+    try:
+        api_response = api_instance.delete_files(project_id=project_id, file_ids=file_ids)
+        pprint(api_response)
+    except ApiException as e:
+        print("Exception when calling FilesApi->delete_files: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **project_id** | **str**| **Required** ID assigned to the project once created in Atinary™ Nexus. | [optional] 
+ **file_ids** | [**list[str]**](str.md)| List of file identifiers to query | [optional] 
+
+### Return type
+
+[**GenericResponse**](GenericResponse.md)
+
+### Authorization
+
+[api_key](../README.md#api_key), [tokens](../README.md#tokens)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | File successfully deleted |  -  |
+**401** | Unauthorized |  -  |
+**403** | Forbidden |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

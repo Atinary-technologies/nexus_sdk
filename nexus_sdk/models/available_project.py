@@ -35,6 +35,7 @@ class AvailableProject(object):
     """
     openapi_types = {
         'project_id': 'str',
+        'id': 'str',
         'name': 'str',
         'owner': 'str',
         'files': 'AvailableFilesSummary',
@@ -44,6 +45,7 @@ class AvailableProject(object):
 
     attribute_map = {
         'project_id': 'project_id',
+        'id': 'id',
         'name': 'name',
         'owner': 'owner',
         'files': 'files',
@@ -51,13 +53,14 @@ class AvailableProject(object):
         'creation_date': 'creation_date'
     }
 
-    def __init__(self, project_id=None, name=None, owner=None, files=None, description='', creation_date=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, project_id=None, id=None, name=None, owner=None, files=None, description='', creation_date=None, local_vars_configuration=None):  # noqa: E501
         """AvailableProject - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
         self.local_vars_configuration = local_vars_configuration
 
         self._project_id = None
+        self._id = None
         self._name = None
         self._owner = None
         self._files = None
@@ -66,6 +69,7 @@ class AvailableProject(object):
         self.discriminator = None
 
         self.project_id = project_id
+        self.id = id
         self.name = name
         self.owner = owner
         self.files = files
@@ -106,6 +110,40 @@ class AvailableProject(object):
             raise ValueError(r"Invalid value for `project_id`, must be a follow pattern or equal to `/^prj_[0-9a-f]{32}$/`")  # noqa: E501
 
         self._project_id = project_id
+
+    @property
+    def id(self):
+        """Gets the id of this AvailableProject.  # noqa: E501
+
+        ID assigned to the project once created in Atinary™ Nexus  # noqa: E501
+
+        :return: The id of this AvailableProject.  # noqa: E501
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this AvailableProject.
+
+        ID assigned to the project once created in Atinary™ Nexus  # noqa: E501
+
+        :param id: The id of this AvailableProject.  # noqa: E501
+        :type: str
+        """
+        if self.local_vars_configuration.client_side_validation and id is None:  # noqa: E501
+            raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
+        if (self.local_vars_configuration.client_side_validation and
+                id is not None and len(id) > 36):
+            raise ValueError("Invalid value for `id`, length must be less than or equal to `36`")  # noqa: E501
+        if (self.local_vars_configuration.client_side_validation and
+                id is not None and len(id) < 36):
+            raise ValueError("Invalid value for `id`, length must be greater than or equal to `36`")  # noqa: E501
+        if (self.local_vars_configuration.client_side_validation and
+                id is not None and not re.search(r'^prj_[0-9a-f]{32}$', id)):  # noqa: E501
+            raise ValueError(r"Invalid value for `id`, must be a follow pattern or equal to `/^prj_[0-9a-f]{32}$/`")  # noqa: E501
+
+        self._id = id
 
     @property
     def name(self):
