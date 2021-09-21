@@ -60,7 +60,7 @@ configuration = nexus_sdk.Configuration(
 with nexus_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = nexus_sdk.ProjectsApi(api_client)
-    project_create_req = nexus_sdk.ProjectCreateReq() # ProjectCreateReq | Json object specifying the **project_name**. (optional)
+    project_create_req = nexus_sdk.ProjectCreateReq() # ProjectCreateReq | Json object specifying the **name**. (optional)
 
     try:
         # Create a new project
@@ -107,7 +107,7 @@ configuration = nexus_sdk.Configuration(
 with nexus_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = nexus_sdk.ProjectsApi(api_client)
-    project_create_req = nexus_sdk.ProjectCreateReq() # ProjectCreateReq | Json object specifying the **project_name**. (optional)
+    project_create_req = nexus_sdk.ProjectCreateReq() # ProjectCreateReq | Json object specifying the **name**. (optional)
 
     try:
         # Create a new project
@@ -121,7 +121,7 @@ with nexus_sdk.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **project_create_req** | [**ProjectCreateReq**](ProjectCreateReq.md)| Json object specifying the **project_name**. | [optional] 
+ **project_create_req** | [**ProjectCreateReq**](ProjectCreateReq.md)| Json object specifying the **name**. | [optional] 
 
 ### Return type
 
@@ -664,7 +664,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **subscribe_users**
-> GenericResponse subscribe_users(project_id, project_subscribe_req=project_subscribe_req)
+> ProjectDetailResponse subscribe_users(project_id, project_subscribe_req=project_subscribe_req)
 
 Add users to a project
 
@@ -777,7 +777,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GenericResponse**](GenericResponse.md)
+[**ProjectDetailResponse**](ProjectDetailResponse.md)
 
 ### Authorization
 
@@ -799,7 +799,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **unsubscribe**
-> GenericResponse unsubscribe(project_id, project_unsubscribe_req=project_unsubscribe_req)
+> ProjectDetailResponse unsubscribe(project_id, project_unsubscribe_req=project_unsubscribe_req)
 
 Unsubscribe from a project
 
@@ -912,7 +912,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GenericResponse**](GenericResponse.md)
+[**ProjectDetailResponse**](ProjectDetailResponse.md)
 
 ### Authorization
 
@@ -934,7 +934,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_project**
-> GenericResponse update_project(project_id, project_update_req=project_update_req)
+> CreateProjectResponse update_project(project_id, project_update_req=project_update_req)
 
 Update project name, description and owner
 
@@ -1047,7 +1047,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GenericResponse**](GenericResponse.md)
+[**CreateProjectResponse**](CreateProjectResponse.md)
 
 ### Authorization
 
@@ -1061,7 +1061,7 @@ Name | Type | Description  | Notes
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Project owner successfully removed |  -  |
+**200** | Project successfully updated |  -  |
 **401** | Unauthorized |  -  |
 **403** | Forbidden |  -  |
 **0** | Unexpected error |  -  |

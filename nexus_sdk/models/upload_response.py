@@ -36,7 +36,7 @@ class UploadResponse(object):
     openapi_types = {
         'request_id': 'str',
         'result': 'Result',
-        'object': 'UploadResponseObject'
+        'object': 'AvailableFile'
     }
 
     attribute_map = {
@@ -123,7 +123,7 @@ class UploadResponse(object):
 
 
         :return: The object of this UploadResponse.  # noqa: E501
-        :rtype: UploadResponseObject
+        :rtype: AvailableFile
         """
         return self._object
 
@@ -133,7 +133,7 @@ class UploadResponse(object):
 
 
         :param object: The object of this UploadResponse.  # noqa: E501
-        :type: UploadResponseObject
+        :type: AvailableFile
         """
         if self.local_vars_configuration.client_side_validation and object is None:  # noqa: E501
             raise ValueError("Invalid value for `object`, must not be `None`")  # noqa: E501

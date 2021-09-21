@@ -159,6 +159,136 @@ class FilesApi(object):
             _request_timeout=local_var_params.get('_request_timeout'),
             collection_formats=collection_formats)
 
+    def delete_files(self, **kwargs):  # noqa: E501
+        """delete_files  # noqa: E501
+
+        Delete several files in a project.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.delete_files(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str project_id: **Required** ID assigned to the project once created in Atinary™ Nexus.
+        :param list[str] file_ids: List of file identifiers to query
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: GenericResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        return self.delete_files_with_http_info(**kwargs)  # noqa: E501
+
+    def delete_files_with_http_info(self, **kwargs):  # noqa: E501
+        """delete_files  # noqa: E501
+
+        Delete several files in a project.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.delete_files_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool: execute request asynchronously
+        :param str project_id: **Required** ID assigned to the project once created in Atinary™ Nexus.
+        :param list[str] file_ids: List of file identifiers to query
+        :param _return_http_data_only: response data without head status code
+                                       and headers
+        :param _preload_content: if False, the urllib3.HTTPResponse object will
+                                 be returned without reading/decoding response
+                                 data. Default is True.
+        :param _request_timeout: timeout setting for this request. If one
+                                 number provided, it will be total request
+                                 timeout. It can also be a pair (tuple) of
+                                 (connection, read) timeouts.
+        :return: tuple(GenericResponse, status_code(int), headers(HTTPHeaderDict))
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        local_var_params = locals()
+
+        all_params = [
+            'project_id',
+            'file_ids'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
+
+        for key, val in six.iteritems(local_var_params['kwargs']):
+            if key not in all_params:
+                raise ApiTypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method delete_files" % key
+                )
+            local_var_params[key] = val
+        del local_var_params['kwargs']
+
+        if self.api_client.client_side_validation and ('project_id' in local_var_params and  # noqa: E501
+                                                        len(local_var_params['project_id']) > 36):  # noqa: E501
+            raise ApiValueError("Invalid value for parameter `project_id` when calling `delete_files`, length must be less than or equal to `36`")  # noqa: E501
+        if self.api_client.client_side_validation and ('project_id' in local_var_params and  # noqa: E501
+                                                        len(local_var_params['project_id']) < 36):  # noqa: E501
+            raise ApiValueError("Invalid value for parameter `project_id` when calling `delete_files`, length must be greater than or equal to `36`")  # noqa: E501
+        if self.api_client.client_side_validation and 'project_id' in local_var_params and not re.search(r'^prj_[0-9a-f]{32}$', local_var_params['project_id']):  # noqa: E501
+            raise ApiValueError("Invalid value for parameter `project_id` when calling `delete_files`, must conform to the pattern `/^prj_[0-9a-f]{32}$/`")  # noqa: E501
+        if self.api_client.client_side_validation and ('file_ids' in local_var_params and  # noqa: E501
+                                                        len(local_var_params['file_ids']) > 99):  # noqa: E501
+            raise ApiValueError("Invalid value for parameter `file_ids` when calling `delete_files`, number of items must be less than or equal to `99`")  # noqa: E501
+        if self.api_client.client_side_validation and ('file_ids' in local_var_params and  # noqa: E501
+                                                        len(local_var_params['file_ids']) < 1):  # noqa: E501
+            raise ApiValueError("Invalid value for parameter `file_ids` when calling `delete_files`, number of items must be greater than or equal to `1`")  # noqa: E501
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'project_id' in local_var_params:
+            header_params['project-id'] = local_var_params['project_id']  # noqa: E501
+        if 'file_ids' in local_var_params:
+            header_params['file-ids'] = local_var_params['file_ids']  # noqa: E501
+            collection_formats['file-ids'] = 'csv'  # noqa: E501
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['api_key', 'tokens']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/Files', 'DELETE',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='GenericResponse',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=local_var_params.get('async_req'),
+            _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501
+            _preload_content=local_var_params.get('_preload_content', True),
+            _request_timeout=local_var_params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
     def download_file(self, file_id, **kwargs):  # noqa: E501
         """Download a file  # noqa: E501
 

@@ -34,91 +34,91 @@ class ProjectCreateReq(object):
                             and the value is json key in definition.
     """
     openapi_types = {
-        'project_name': 'str',
-        'project_description': 'str'
+        'name': 'str',
+        'description': 'str'
     }
 
     attribute_map = {
-        'project_name': 'project_name',
-        'project_description': 'project_description'
+        'name': 'name',
+        'description': 'description'
     }
 
-    def __init__(self, project_name=None, project_description='', local_vars_configuration=None):  # noqa: E501
+    def __init__(self, name=None, description='', local_vars_configuration=None):  # noqa: E501
         """ProjectCreateReq - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
         self.local_vars_configuration = local_vars_configuration
 
-        self._project_name = None
-        self._project_description = None
+        self._name = None
+        self._description = None
         self.discriminator = None
 
-        self.project_name = project_name
-        if project_description is not None:
-            self.project_description = project_description
+        self.name = name
+        if description is not None:
+            self.description = description
 
     @property
-    def project_name(self):
-        """Gets the project_name of this ProjectCreateReq.  # noqa: E501
+    def name(self):
+        """Gets the name of this ProjectCreateReq.  # noqa: E501
 
         Name assigned to the project  # noqa: E501
 
-        :return: The project_name of this ProjectCreateReq.  # noqa: E501
+        :return: The name of this ProjectCreateReq.  # noqa: E501
         :rtype: str
         """
-        return self._project_name
+        return self._name
 
-    @project_name.setter
-    def project_name(self, project_name):
-        """Sets the project_name of this ProjectCreateReq.
+    @name.setter
+    def name(self, name):
+        """Sets the name of this ProjectCreateReq.
 
         Name assigned to the project  # noqa: E501
 
-        :param project_name: The project_name of this ProjectCreateReq.  # noqa: E501
+        :param name: The name of this ProjectCreateReq.  # noqa: E501
         :type: str
         """
-        if self.local_vars_configuration.client_side_validation and project_name is None:  # noqa: E501
-            raise ValueError("Invalid value for `project_name`, must not be `None`")  # noqa: E501
+        if self.local_vars_configuration.client_side_validation and name is None:  # noqa: E501
+            raise ValueError("Invalid value for `name`, must not be `None`")  # noqa: E501
         if (self.local_vars_configuration.client_side_validation and
-                project_name is not None and len(project_name) > 50):
-            raise ValueError("Invalid value for `project_name`, length must be less than or equal to `50`")  # noqa: E501
+                name is not None and len(name) > 50):
+            raise ValueError("Invalid value for `name`, length must be less than or equal to `50`")  # noqa: E501
         if (self.local_vars_configuration.client_side_validation and
-                project_name is not None and len(project_name) < 1):
-            raise ValueError("Invalid value for `project_name`, length must be greater than or equal to `1`")  # noqa: E501
+                name is not None and len(name) < 1):
+            raise ValueError("Invalid value for `name`, length must be greater than or equal to `1`")  # noqa: E501
         if (self.local_vars_configuration.client_side_validation and
-                project_name is not None and not re.search(r'^[ -~]+$', project_name)):  # noqa: E501
-            raise ValueError(r"Invalid value for `project_name`, must be a follow pattern or equal to `/^[ -~]+$/`")  # noqa: E501
+                name is not None and not re.search(r'^[ -~]+$', name)):  # noqa: E501
+            raise ValueError(r"Invalid value for `name`, must be a follow pattern or equal to `/^[ -~]+$/`")  # noqa: E501
 
-        self._project_name = project_name
+        self._name = name
 
     @property
-    def project_description(self):
-        """Gets the project_description of this ProjectCreateReq.  # noqa: E501
+    def description(self):
+        """Gets the description of this ProjectCreateReq.  # noqa: E501
 
         Description of the project.  # noqa: E501
 
-        :return: The project_description of this ProjectCreateReq.  # noqa: E501
+        :return: The description of this ProjectCreateReq.  # noqa: E501
         :rtype: str
         """
-        return self._project_description
+        return self._description
 
-    @project_description.setter
-    def project_description(self, project_description):
-        """Sets the project_description of this ProjectCreateReq.
+    @description.setter
+    def description(self, description):
+        """Sets the description of this ProjectCreateReq.
 
         Description of the project.  # noqa: E501
 
-        :param project_description: The project_description of this ProjectCreateReq.  # noqa: E501
+        :param description: The description of this ProjectCreateReq.  # noqa: E501
         :type: str
         """
         if (self.local_vars_configuration.client_side_validation and
-                project_description is not None and len(project_description) > 255):
-            raise ValueError("Invalid value for `project_description`, length must be less than or equal to `255`")  # noqa: E501
+                description is not None and len(description) > 255):
+            raise ValueError("Invalid value for `description`, length must be less than or equal to `255`")  # noqa: E501
         if (self.local_vars_configuration.client_side_validation and
-                project_description is not None and not re.search(r'^[ -~]*$', project_description)):  # noqa: E501
-            raise ValueError(r"Invalid value for `project_description`, must be a follow pattern or equal to `/^[ -~]*$/`")  # noqa: E501
+                description is not None and not re.search(r'^[ -~]*$', description)):  # noqa: E501
+            raise ValueError(r"Invalid value for `description`, must be a follow pattern or equal to `/^[ -~]*$/`")  # noqa: E501
 
-        self._project_description = project_description
+        self._description = description
 
     def to_dict(self):
         """Returns the model properties as a dict"""

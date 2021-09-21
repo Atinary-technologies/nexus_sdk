@@ -149,6 +149,7 @@ Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *AdminApi* | [**service_information**](docs/AdminApi.md#service_information) | **GET** /ServiceInfo | Service information.
 *FilesApi* | [**delete_file**](docs/FilesApi.md#delete_file) | **DELETE** /Files/{file_id} | Delete a file
+*FilesApi* | [**delete_files**](docs/FilesApi.md#delete_files) | **DELETE** /Files | 
 *FilesApi* | [**download_file**](docs/FilesApi.md#download_file) | **GET** /Files/{file_id} | Download a file
 *FilesApi* | [**list_files**](docs/FilesApi.md#list_files) | **GET** /Files | List available files for a project
 *FilesApi* | [**upload_file**](docs/FilesApi.md#upload_file) | **POST** /Files | Upload a file under a project
@@ -168,7 +169,6 @@ Class | Method | HTTP request | Description
  - [AvailableFilesSummary](docs/AvailableFilesSummary.md)
  - [AvailableProject](docs/AvailableProject.md)
  - [CreateProjectResponse](docs/CreateProjectResponse.md)
- - [CreateProjectResponseObject](docs/CreateProjectResponseObject.md)
  - [GenericResponse](docs/GenericResponse.md)
  - [InlineObject](docs/InlineObject.md)
  - [ListFilesResponse](docs/ListFilesResponse.md)
@@ -183,7 +183,6 @@ Class | Method | HTTP request | Description
  - [ServiceInfo](docs/ServiceInfo.md)
  - [ServiceInfoResponse](docs/ServiceInfoResponse.md)
  - [UploadResponse](docs/UploadResponse.md)
- - [UploadResponseObject](docs/UploadResponseObject.md)
 
 
 ### Documentation For Authorization

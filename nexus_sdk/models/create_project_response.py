@@ -36,7 +36,7 @@ class CreateProjectResponse(object):
     openapi_types = {
         'request_id': 'str',
         'result': 'Result',
-        'object': 'CreateProjectResponseObject'
+        'object': 'AvailableProject'
     }
 
     attribute_map = {
@@ -123,7 +123,7 @@ class CreateProjectResponse(object):
 
 
         :return: The object of this CreateProjectResponse.  # noqa: E501
-        :rtype: CreateProjectResponseObject
+        :rtype: AvailableProject
         """
         return self._object
 
@@ -133,7 +133,7 @@ class CreateProjectResponse(object):
 
 
         :param object: The object of this CreateProjectResponse.  # noqa: E501
-        :type: CreateProjectResponseObject
+        :type: AvailableProject
         """
         if self.local_vars_configuration.client_side_validation and object is None:  # noqa: E501
             raise ValueError("Invalid value for `object`, must not be `None`")  # noqa: E501
