@@ -1,4 +1,4 @@
-# InlineObject
+# UploadFileReq
 
 ## Properties
 Name | Type | Description | Notes

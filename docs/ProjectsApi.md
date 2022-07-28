@@ -147,7 +147,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_tutorial_project**
-> CreateProjectResponse create_tutorial_project()
+> CreateProjectResponse create_tutorial_project(group_id=group_id)
 
 Create the tutorial project
 
@@ -192,10 +192,11 @@ configuration = nexus_sdk.Configuration(
 with nexus_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = nexus_sdk.ProjectsApi(api_client)
-    
+    group_id = 'group_id_example' # str | Group identifiers (optional)
+
     try:
         # Create the tutorial project
-        api_response = api_instance.create_tutorial_project()
+        api_response = api_instance.create_tutorial_project(group_id=group_id)
         pprint(api_response)
     except ApiException as e:
         print("Exception when calling ProjectsApi->create_tutorial_project: %s\n" % e)
@@ -238,17 +239,21 @@ configuration = nexus_sdk.Configuration(
 with nexus_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = nexus_sdk.ProjectsApi(api_client)
-    
+    group_id = 'group_id_example' # str | Group identifiers (optional)
+
     try:
         # Create the tutorial project
-        api_response = api_instance.create_tutorial_project()
+        api_response = api_instance.create_tutorial_project(group_id=group_id)
         pprint(api_response)
     except ApiException as e:
         print("Exception when calling ProjectsApi->create_tutorial_project: %s\n" % e)
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **group_id** | **str**| Group identifiers | [optional] 
 
 ### Return type
 
@@ -538,7 +543,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **list_projects**
-> ListProjectsResponse list_projects()
+> ListProjectsResponse list_projects(group_id=group_id)
 
 List project subscriptions
 
@@ -583,10 +588,11 @@ configuration = nexus_sdk.Configuration(
 with nexus_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = nexus_sdk.ProjectsApi(api_client)
-    
+    group_id = 'group_id_example' # str | Group identifiers (optional)
+
     try:
         # List project subscriptions
-        api_response = api_instance.list_projects()
+        api_response = api_instance.list_projects(group_id=group_id)
         pprint(api_response)
     except ApiException as e:
         print("Exception when calling ProjectsApi->list_projects: %s\n" % e)
@@ -629,17 +635,21 @@ configuration = nexus_sdk.Configuration(
 with nexus_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = nexus_sdk.ProjectsApi(api_client)
-    
+    group_id = 'group_id_example' # str | Group identifiers (optional)
+
     try:
         # List project subscriptions
-        api_response = api_instance.list_projects()
+        api_response = api_instance.list_projects(group_id=group_id)
         pprint(api_response)
     except ApiException as e:
         print("Exception when calling ProjectsApi->list_projects: %s\n" % e)
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **group_id** | **str**| Group identifiers | [optional] 
 
 ### Return type
 

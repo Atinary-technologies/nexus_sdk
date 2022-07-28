@@ -5,7 +5,7 @@ All URIs are relative to *https://scientia.atinary.com/nexus/api/latest*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**delete_file**](FilesApi.md#delete_file) | **DELETE** /Files/{file_id} | Delete a file
-[**delete_files**](FilesApi.md#delete_files) | **DELETE** /Files | 
+[**delete_files**](FilesApi.md#delete_files) | **POST** /Files/delete | 
 [**download_file**](FilesApi.md#download_file) | **GET** /Files/{file_id} | Download a file
 [**list_files**](FilesApi.md#list_files) | **GET** /Files | List available files for a project
 [**upload_file**](FilesApi.md#upload_file) | **POST** /Files | Upload a file under a project
@@ -144,7 +144,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_files**
-> GenericResponse delete_files(project_id=project_id, file_ids=file_ids)
+> GenericResponse delete_files(project_id=project_id, delete_files_req=delete_files_req)
 
 
 
@@ -190,10 +190,10 @@ with nexus_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = nexus_sdk.FilesApi(api_client)
     project_id = 'project_id_example' # str | **Required** ID assigned to the project once created in Atinary™ Nexus. (optional)
-file_ids = ['file_ids_example'] # list[str] | List of file identifiers to query (optional)
+delete_files_req = nexus_sdk.DeleteFilesReq() # DeleteFilesReq |  (optional)
 
     try:
-        api_response = api_instance.delete_files(project_id=project_id, file_ids=file_ids)
+        api_response = api_instance.delete_files(project_id=project_id, delete_files_req=delete_files_req)
         pprint(api_response)
     except ApiException as e:
         print("Exception when calling FilesApi->delete_files: %s\n" % e)
@@ -237,10 +237,10 @@ with nexus_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = nexus_sdk.FilesApi(api_client)
     project_id = 'project_id_example' # str | **Required** ID assigned to the project once created in Atinary™ Nexus. (optional)
-file_ids = ['file_ids_example'] # list[str] | List of file identifiers to query (optional)
+delete_files_req = nexus_sdk.DeleteFilesReq() # DeleteFilesReq |  (optional)
 
     try:
-        api_response = api_instance.delete_files(project_id=project_id, file_ids=file_ids)
+        api_response = api_instance.delete_files(project_id=project_id, delete_files_req=delete_files_req)
         pprint(api_response)
     except ApiException as e:
         print("Exception when calling FilesApi->delete_files: %s\n" % e)
@@ -251,7 +251,7 @@ file_ids = ['file_ids_example'] # list[str] | List of file identifiers to query 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **project_id** | **str**| **Required** ID assigned to the project once created in Atinary™ Nexus. | [optional] 
- **file_ids** | [**list[str]**](str.md)| List of file identifiers to query | [optional] 
+ **delete_files_req** | [**DeleteFilesReq**](DeleteFilesReq.md)|  | [optional] 
 
 ### Return type
 
@@ -263,7 +263,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -543,7 +543,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **upload_file**
-> UploadResponse upload_file(project_id, group_type, inline_object=inline_object)
+> UploadResponse upload_file(project_id, group_type, upload_file_req=upload_file_req)
 
 Upload a file under a project
 
@@ -590,11 +590,11 @@ with nexus_sdk.ApiClient(configuration) as api_client:
     api_instance = nexus_sdk.FilesApi(api_client)
     project_id = 'project_id_example' # str | ID assigned to the project once created in Atinary™ Nexus.
 group_type = 'group_type_example' # str | String indicating how the file is classified. Available values are *parameters*, *properties* or *other*.
-inline_object = nexus_sdk.InlineObject() # InlineObject |  (optional)
+upload_file_req = nexus_sdk.UploadFileReq() # UploadFileReq |  (optional)
 
     try:
         # Upload a file under a project
-        api_response = api_instance.upload_file(project_id, group_type, inline_object=inline_object)
+        api_response = api_instance.upload_file(project_id, group_type, upload_file_req=upload_file_req)
         pprint(api_response)
     except ApiException as e:
         print("Exception when calling FilesApi->upload_file: %s\n" % e)
@@ -639,11 +639,11 @@ with nexus_sdk.ApiClient(configuration) as api_client:
     api_instance = nexus_sdk.FilesApi(api_client)
     project_id = 'project_id_example' # str | ID assigned to the project once created in Atinary™ Nexus.
 group_type = 'group_type_example' # str | String indicating how the file is classified. Available values are *parameters*, *properties* or *other*.
-inline_object = nexus_sdk.InlineObject() # InlineObject |  (optional)
+upload_file_req = nexus_sdk.UploadFileReq() # UploadFileReq |  (optional)
 
     try:
         # Upload a file under a project
-        api_response = api_instance.upload_file(project_id, group_type, inline_object=inline_object)
+        api_response = api_instance.upload_file(project_id, group_type, upload_file_req=upload_file_req)
         pprint(api_response)
     except ApiException as e:
         print("Exception when calling FilesApi->upload_file: %s\n" % e)
@@ -655,7 +655,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **project_id** | **str**| ID assigned to the project once created in Atinary™ Nexus. | 
  **group_type** | **str**| String indicating how the file is classified. Available values are *parameters*, *properties* or *other*. | 
- **inline_object** | [**InlineObject**](InlineObject.md)|  | [optional] 
+ **upload_file_req** | [**UploadFileReq**](UploadFileReq.md)|  | [optional] 
 
 ### Return type
 

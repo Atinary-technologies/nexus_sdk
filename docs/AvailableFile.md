@@ -3,7 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**file_id** | **str** | ID assigned to the file once it is uploaded | 
 **id** | **str** | ID assigned to the file once it is uploaded | 
 **name** | **str** | File Name | 
 **group_type** | **str** | Indicator of the file nature | 
