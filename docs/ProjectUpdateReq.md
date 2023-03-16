@@ -1,6 +1,7 @@
 # ProjectUpdateReq
 
 Specific body request for changing the project name, description or owner.
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

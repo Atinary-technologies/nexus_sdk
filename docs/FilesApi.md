@@ -39,14 +39,10 @@ configuration = nexus_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure API key authorization: api_key
-configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api/latest",
-    api_key = {
-        'X-API-KEY': 'YOUR_API_KEY'
-    }
-)
+configuration.api_key['api_key'] = 'YOUR_API_KEY'
+
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
+# configuration.api_key_prefix['api_key'] = 'Bearer'
 
 # Configure Bearer authorization (JWT): tokens
 configuration = nexus_sdk.Configuration(
@@ -86,14 +82,10 @@ configuration = nexus_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure API key authorization: api_key
-configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api/latest",
-    api_key = {
-        'X-API-KEY': 'YOUR_API_KEY'
-    }
-)
+configuration.api_key['api_key'] = 'YOUR_API_KEY'
+
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
+# configuration.api_key_prefix['api_key'] = 'Bearer'
 
 # Configure Bearer authorization (JWT): tokens
 configuration = nexus_sdk.Configuration(
@@ -171,14 +163,10 @@ configuration = nexus_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure API key authorization: api_key
-configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api/latest",
-    api_key = {
-        'X-API-KEY': 'YOUR_API_KEY'
-    }
-)
+configuration.api_key['api_key'] = 'YOUR_API_KEY'
+
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
+# configuration.api_key_prefix['api_key'] = 'Bearer'
 
 # Configure Bearer authorization (JWT): tokens
 configuration = nexus_sdk.Configuration(
@@ -190,7 +178,7 @@ with nexus_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = nexus_sdk.FilesApi(api_client)
     project_id = 'project_id_example' # str | **Required** ID assigned to the project once created in Atinary™ Nexus. (optional)
-delete_files_req = nexus_sdk.DeleteFilesReq() # DeleteFilesReq |  (optional)
+delete_files_req = nexus_sdk.DeleteFilesReq() # DeleteFilesReq | Json object specifying the **name**. (optional)
 
     try:
         api_response = api_instance.delete_files(project_id=project_id, delete_files_req=delete_files_req)
@@ -218,14 +206,10 @@ configuration = nexus_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure API key authorization: api_key
-configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api/latest",
-    api_key = {
-        'X-API-KEY': 'YOUR_API_KEY'
-    }
-)
+configuration.api_key['api_key'] = 'YOUR_API_KEY'
+
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
+# configuration.api_key_prefix['api_key'] = 'Bearer'
 
 # Configure Bearer authorization (JWT): tokens
 configuration = nexus_sdk.Configuration(
@@ -237,7 +221,7 @@ with nexus_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = nexus_sdk.FilesApi(api_client)
     project_id = 'project_id_example' # str | **Required** ID assigned to the project once created in Atinary™ Nexus. (optional)
-delete_files_req = nexus_sdk.DeleteFilesReq() # DeleteFilesReq |  (optional)
+delete_files_req = nexus_sdk.DeleteFilesReq() # DeleteFilesReq | Json object specifying the **name**. (optional)
 
     try:
         api_response = api_instance.delete_files(project_id=project_id, delete_files_req=delete_files_req)
@@ -251,7 +235,7 @@ delete_files_req = nexus_sdk.DeleteFilesReq() # DeleteFilesReq |  (optional)
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **project_id** | **str**| **Required** ID assigned to the project once created in Atinary™ Nexus. | [optional] 
- **delete_files_req** | [**DeleteFilesReq**](DeleteFilesReq.md)|  | [optional] 
+ **delete_files_req** | [**DeleteFilesReq**](DeleteFilesReq.md)| Json object specifying the **name**. | [optional] 
 
 ### Return type
 
@@ -303,14 +287,10 @@ configuration = nexus_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure API key authorization: api_key
-configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api/latest",
-    api_key = {
-        'X-API-KEY': 'YOUR_API_KEY'
-    }
-)
+configuration.api_key['api_key'] = 'YOUR_API_KEY'
+
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
+# configuration.api_key_prefix['api_key'] = 'Bearer'
 
 # Configure Bearer authorization (JWT): tokens
 configuration = nexus_sdk.Configuration(
@@ -350,14 +330,10 @@ configuration = nexus_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure API key authorization: api_key
-configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api/latest",
-    api_key = {
-        'X-API-KEY': 'YOUR_API_KEY'
-    }
-)
+configuration.api_key['api_key'] = 'YOUR_API_KEY'
+
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
+# configuration.api_key_prefix['api_key'] = 'Bearer'
 
 # Configure Bearer authorization (JWT): tokens
 configuration = nexus_sdk.Configuration(
@@ -435,14 +411,10 @@ configuration = nexus_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure API key authorization: api_key
-configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api/latest",
-    api_key = {
-        'X-API-KEY': 'YOUR_API_KEY'
-    }
-)
+configuration.api_key['api_key'] = 'YOUR_API_KEY'
+
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
+# configuration.api_key_prefix['api_key'] = 'Bearer'
 
 # Configure Bearer authorization (JWT): tokens
 configuration = nexus_sdk.Configuration(
@@ -483,14 +455,10 @@ configuration = nexus_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure API key authorization: api_key
-configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api/latest",
-    api_key = {
-        'X-API-KEY': 'YOUR_API_KEY'
-    }
-)
+configuration.api_key['api_key'] = 'YOUR_API_KEY'
+
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
+# configuration.api_key_prefix['api_key'] = 'Bearer'
 
 # Configure Bearer authorization (JWT): tokens
 configuration = nexus_sdk.Configuration(
@@ -543,7 +511,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **upload_file**
-> UploadResponse upload_file(project_id, group_type, upload_file_req=upload_file_req)
+> UploadResponse upload_file(project_id, group_type, file)
 
 Upload a file under a project
 
@@ -570,14 +538,10 @@ configuration = nexus_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure API key authorization: api_key
-configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api/latest",
-    api_key = {
-        'X-API-KEY': 'YOUR_API_KEY'
-    }
-)
+configuration.api_key['api_key'] = 'YOUR_API_KEY'
+
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
+# configuration.api_key_prefix['api_key'] = 'Bearer'
 
 # Configure Bearer authorization (JWT): tokens
 configuration = nexus_sdk.Configuration(
@@ -590,11 +554,11 @@ with nexus_sdk.ApiClient(configuration) as api_client:
     api_instance = nexus_sdk.FilesApi(api_client)
     project_id = 'project_id_example' # str | ID assigned to the project once created in Atinary™ Nexus.
 group_type = 'group_type_example' # str | String indicating how the file is classified. Available values are *parameters*, *properties* or *other*.
-upload_file_req = nexus_sdk.UploadFileReq() # UploadFileReq |  (optional)
+file = '/path/to/file' # file | 
 
     try:
         # Upload a file under a project
-        api_response = api_instance.upload_file(project_id, group_type, upload_file_req=upload_file_req)
+        api_response = api_instance.upload_file(project_id, group_type, file)
         pprint(api_response)
     except ApiException as e:
         print("Exception when calling FilesApi->upload_file: %s\n" % e)
@@ -619,14 +583,10 @@ configuration = nexus_sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure API key authorization: api_key
-configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api/latest",
-    api_key = {
-        'X-API-KEY': 'YOUR_API_KEY'
-    }
-)
+configuration.api_key['api_key'] = 'YOUR_API_KEY'
+
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
+# configuration.api_key_prefix['api_key'] = 'Bearer'
 
 # Configure Bearer authorization (JWT): tokens
 configuration = nexus_sdk.Configuration(
@@ -639,11 +599,11 @@ with nexus_sdk.ApiClient(configuration) as api_client:
     api_instance = nexus_sdk.FilesApi(api_client)
     project_id = 'project_id_example' # str | ID assigned to the project once created in Atinary™ Nexus.
 group_type = 'group_type_example' # str | String indicating how the file is classified. Available values are *parameters*, *properties* or *other*.
-upload_file_req = nexus_sdk.UploadFileReq() # UploadFileReq |  (optional)
+file = '/path/to/file' # file | 
 
     try:
         # Upload a file under a project
-        api_response = api_instance.upload_file(project_id, group_type, upload_file_req=upload_file_req)
+        api_response = api_instance.upload_file(project_id, group_type, file)
         pprint(api_response)
     except ApiException as e:
         print("Exception when calling FilesApi->upload_file: %s\n" % e)
@@ -655,7 +615,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **project_id** | **str**| ID assigned to the project once created in Atinary™ Nexus. | 
  **group_type** | **str**| String indicating how the file is classified. Available values are *parameters*, *properties* or *other*. | 
- **upload_file_req** | [**UploadFileReq**](UploadFileReq.md)|  | [optional] 
+ **file** | **file**|  | 
 
 ### Return type
 

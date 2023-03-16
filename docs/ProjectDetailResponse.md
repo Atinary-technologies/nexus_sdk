@@ -1,5 +1,6 @@
 # ProjectDetailResponse
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -1,5 +1,6 @@
 # Result
 
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

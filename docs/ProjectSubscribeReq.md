@@ -1,6 +1,7 @@
 # ProjectSubscribeReq
 
 Specific body request for subscribing users to a project.
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
