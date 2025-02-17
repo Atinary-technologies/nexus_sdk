@@ -37,7 +37,7 @@ class HealthCheckReport(object):
                             and the value is json key in definition.
     """
     openapi_types = {
-        'generated_at': 'datetime'
+        'generated_at': 'str'
     }
 
     attribute_map = {
@@ -59,10 +59,10 @@ class HealthCheckReport(object):
     def generated_at(self):
         """Gets the generated_at of this HealthCheckReport.  # noqa: E501
 
-        Following RFC3339 format, this is a string representing an ISO8601 Date-time  # noqa: E501
+        date-time in ISO8601 format  # noqa: E501
 
         :return: The generated_at of this HealthCheckReport.  # noqa: E501
-        :rtype: datetime
+        :rtype: str
         """
         return self._generated_at
 
@@ -70,13 +70,22 @@ class HealthCheckReport(object):
     def generated_at(self, generated_at):
         """Sets the generated_at of this HealthCheckReport.
 
-        Following RFC3339 format, this is a string representing an ISO8601 Date-time  # noqa: E501
+        date-time in ISO8601 format  # noqa: E501
 
         :param generated_at: The generated_at of this HealthCheckReport.  # noqa: E501
-        :type generated_at: datetime
+        :type generated_at: str
         """
         if self.local_vars_configuration.client_side_validation and generated_at is None:  # noqa: E501
             raise ValueError("Invalid value for `generated_at`, must not be `None`")  # noqa: E501
+        if (self.local_vars_configuration.client_side_validation and
+                generated_at is not None and len(generated_at) > 32):
+            raise ValueError("Invalid value for `generated_at`, length must be less than or equal to `32`")  # noqa: E501
+        if (self.local_vars_configuration.client_side_validation and
+                generated_at is not None and len(generated_at) < 19):
+            raise ValueError("Invalid value for `generated_at`, length must be greater than or equal to `19`")  # noqa: E501
+        if (self.local_vars_configuration.client_side_validation and
+                generated_at is not None and not re.search(r'^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d{1,6})?(\+\d{2}:\d{2}|Z)?$', generated_at)):  # noqa: E501
+            raise ValueError(r"Invalid value for `generated_at`, must be a follow pattern or equal to `/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d{1,6})?(\+\d{2}:\d{2}|Z)?$/`")  # noqa: E501
 
         self._generated_at = generated_at
 

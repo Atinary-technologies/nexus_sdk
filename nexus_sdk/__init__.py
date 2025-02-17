@@ -20,6 +20,7 @@ __version__ = "1.1.0"
 # import apis into sdk package
 from nexus_sdk.api.admin_api import AdminApi
 from nexus_sdk.api.files_api import FilesApi
+from nexus_sdk.api.groups_api import GroupsApi
 from nexus_sdk.api.projects_api import ProjectsApi
 
 # import ApiClient
@@ -37,6 +38,7 @@ from nexus_sdk.models.available_files_summary import AvailableFilesSummary
 from nexus_sdk.models.available_project import AvailableProject
 from nexus_sdk.models.create_project_response import CreateProjectResponse
 from nexus_sdk.models.delete_files_req import DeleteFilesReq
+from nexus_sdk.models.file_extension import FileExtension
 from nexus_sdk.models.generic_response import GenericResponse
 from nexus_sdk.models.health_check_report import HealthCheckReport
 from nexus_sdk.models.list_files_response import ListFilesResponse

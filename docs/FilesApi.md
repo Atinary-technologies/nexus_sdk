@@ -1,6 +1,6 @@
 # nexus_sdk.FilesApi
 
-All URIs are relative to *https://scientia.atinary.com/nexus/api/latest*
+All URIs are relative to *https://api.enterprise.atinary.com/nexus/latest*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -27,10 +27,10 @@ import time
 import nexus_sdk
 from nexus_sdk.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api/latest
+# Defining the host is optional and defaults to https://api.enterprise.atinary.com/nexus/latest
 # See configuration.py for a list of all supported configuration parameters.
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api/latest"
+    host = "https://api.enterprise.atinary.com/nexus/latest"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -70,10 +70,10 @@ import time
 import nexus_sdk
 from nexus_sdk.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api/latest
+# Defining the host is optional and defaults to https://api.enterprise.atinary.com/nexus/latest
 # See configuration.py for a list of all supported configuration parameters.
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api/latest"
+    host = "https://api.enterprise.atinary.com/nexus/latest"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -151,10 +151,10 @@ import time
 import nexus_sdk
 from nexus_sdk.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api/latest
+# Defining the host is optional and defaults to https://api.enterprise.atinary.com/nexus/latest
 # See configuration.py for a list of all supported configuration parameters.
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api/latest"
+    host = "https://api.enterprise.atinary.com/nexus/latest"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -178,7 +178,7 @@ with nexus_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = nexus_sdk.FilesApi(api_client)
     project_id = 'project_id_example' # str | **Required** ID assigned to the project once created in Atinary™ Nexus. (optional)
-delete_files_req = nexus_sdk.DeleteFilesReq() # DeleteFilesReq | Json object specifying the **name**. (optional)
+delete_files_req = ["fle_00000000000000000000000000000001","fle_00000000000000000000000000000002","fle_00000000000000000000000000000003"] # DeleteFilesReq | Json object specifying the **name**. (optional)
 
     try:
         api_response = api_instance.delete_files(project_id=project_id, delete_files_req=delete_files_req)
@@ -194,10 +194,10 @@ import time
 import nexus_sdk
 from nexus_sdk.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api/latest
+# Defining the host is optional and defaults to https://api.enterprise.atinary.com/nexus/latest
 # See configuration.py for a list of all supported configuration parameters.
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api/latest"
+    host = "https://api.enterprise.atinary.com/nexus/latest"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -221,7 +221,7 @@ with nexus_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = nexus_sdk.FilesApi(api_client)
     project_id = 'project_id_example' # str | **Required** ID assigned to the project once created in Atinary™ Nexus. (optional)
-delete_files_req = nexus_sdk.DeleteFilesReq() # DeleteFilesReq | Json object specifying the **name**. (optional)
+delete_files_req = ["fle_00000000000000000000000000000001","fle_00000000000000000000000000000002","fle_00000000000000000000000000000003"] # DeleteFilesReq | Json object specifying the **name**. (optional)
 
     try:
         api_response = api_instance.delete_files(project_id=project_id, delete_files_req=delete_files_req)
@@ -256,6 +256,10 @@ Name | Type | Description  | Notes
 **200** | File successfully deleted |  -  |
 **401** | Unauthorized |  -  |
 **403** | Forbidden |  -  |
+**406** | Not Acceptable |  -  |
+**415** | Unsupported Media Type |  -  |
+**429** | Too Many Requests |  -  |
+**0** | Unexpected error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -275,10 +279,10 @@ import time
 import nexus_sdk
 from nexus_sdk.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api/latest
+# Defining the host is optional and defaults to https://api.enterprise.atinary.com/nexus/latest
 # See configuration.py for a list of all supported configuration parameters.
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api/latest"
+    host = "https://api.enterprise.atinary.com/nexus/latest"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -318,10 +322,10 @@ import time
 import nexus_sdk
 from nexus_sdk.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api/latest
+# Defining the host is optional and defaults to https://api.enterprise.atinary.com/nexus/latest
 # See configuration.py for a list of all supported configuration parameters.
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api/latest"
+    host = "https://api.enterprise.atinary.com/nexus/latest"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -399,10 +403,10 @@ import time
 import nexus_sdk
 from nexus_sdk.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api/latest
+# Defining the host is optional and defaults to https://api.enterprise.atinary.com/nexus/latest
 # See configuration.py for a list of all supported configuration parameters.
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api/latest"
+    host = "https://api.enterprise.atinary.com/nexus/latest"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -443,10 +447,10 @@ import time
 import nexus_sdk
 from nexus_sdk.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api/latest
+# Defining the host is optional and defaults to https://api.enterprise.atinary.com/nexus/latest
 # See configuration.py for a list of all supported configuration parameters.
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api/latest"
+    host = "https://api.enterprise.atinary.com/nexus/latest"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -515,7 +519,7 @@ Name | Type | Description  | Notes
 
 Upload a file under a project
 
-Upload a file under a specific project. Note that only users subscribed to the project can upload files to it. 
+Upload a file under a specific project. Note that only users subscribed to the project can upload files to it.
 
 ### Example
 
@@ -526,10 +530,10 @@ import time
 import nexus_sdk
 from nexus_sdk.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api/latest
+# Defining the host is optional and defaults to https://api.enterprise.atinary.com/nexus/latest
 # See configuration.py for a list of all supported configuration parameters.
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api/latest"
+    host = "https://api.enterprise.atinary.com/nexus/latest"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -571,10 +575,10 @@ import time
 import nexus_sdk
 from nexus_sdk.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://scientia.atinary.com/nexus/api/latest
+# Defining the host is optional and defaults to https://api.enterprise.atinary.com/nexus/latest
 # See configuration.py for a list of all supported configuration parameters.
 configuration = nexus_sdk.Configuration(
-    host = "https://scientia.atinary.com/nexus/api/latest"
+    host = "https://api.enterprise.atinary.com/nexus/latest"
 )
 
 # The client must configure the authentication and authorization parameters

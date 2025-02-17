@@ -279,8 +279,8 @@ class ProjectsApi(object):
         if self.api_client.client_side_validation and ('group_id' in local_var_params and  # noqa: E501
                                                         len(local_var_params['group_id']) < 1):  # noqa: E501
             raise ApiValueError("Invalid value for parameter `group_id` when calling `create_tutorial_project`, length must be greater than or equal to `1`")  # noqa: E501
-        if self.api_client.client_side_validation and 'group_id' in local_var_params and not re.search(r'^\S*$', local_var_params['group_id']):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `group_id` when calling `create_tutorial_project`, must conform to the pattern `/^\S*$/`")  # noqa: E501
+        if self.api_client.client_side_validation and 'group_id' in local_var_params and not re.search(r'^[\w-]+$', local_var_params['group_id']):  # noqa: E501
+            raise ApiValueError("Invalid value for parameter `group_id` when calling `create_tutorial_project`, must conform to the pattern `/^[\w-]+$/`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -717,8 +717,8 @@ class ProjectsApi(object):
         if self.api_client.client_side_validation and ('group_id' in local_var_params and  # noqa: E501
                                                         len(local_var_params['group_id']) < 1):  # noqa: E501
             raise ApiValueError("Invalid value for parameter `group_id` when calling `list_projects`, length must be greater than or equal to `1`")  # noqa: E501
-        if self.api_client.client_side_validation and 'group_id' in local_var_params and not re.search(r'^\S*$', local_var_params['group_id']):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `group_id` when calling `list_projects`, must conform to the pattern `/^\S*$/`")  # noqa: E501
+        if self.api_client.client_side_validation and 'group_id' in local_var_params and not re.search(r'^[\w-]+$', local_var_params['group_id']):  # noqa: E501
+            raise ApiValueError("Invalid value for parameter `group_id` when calling `list_projects`, must conform to the pattern `/^[\w-]+$/`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}

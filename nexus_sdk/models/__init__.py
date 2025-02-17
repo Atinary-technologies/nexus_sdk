@@ -20,6 +20,7 @@ from nexus_sdk.models.available_files_summary import AvailableFilesSummary
 from nexus_sdk.models.available_project import AvailableProject
 from nexus_sdk.models.create_project_response import CreateProjectResponse
 from nexus_sdk.models.delete_files_req import DeleteFilesReq
+from nexus_sdk.models.file_extension import FileExtension
 from nexus_sdk.models.generic_response import GenericResponse
 from nexus_sdk.models.health_check_report import HealthCheckReport
 from nexus_sdk.models.list_files_response import ListFilesResponse
