@@ -122,6 +122,9 @@ class ProjectUpdateReq(object):
                 new_description is not None and len(new_description) > 255):
             raise ValueError("Invalid value for `new_description`, length must be less than or equal to `255`")  # noqa: E501
         if (self.local_vars_configuration.client_side_validation and
+                new_description is not None and len(new_description) < 0):
+            raise ValueError("Invalid value for `new_description`, length must be greater than or equal to `0`")  # noqa: E501
+        if (self.local_vars_configuration.client_side_validation and
                 new_description is not None and not re.search(r'^[ -~]*$', new_description)):  # noqa: E501
             raise ValueError(r"Invalid value for `new_description`, must be a follow pattern or equal to `/^[ -~]*$/`")  # noqa: E501
 

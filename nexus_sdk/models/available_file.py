@@ -40,7 +40,7 @@ class AvailableFile(object):
         'id': 'str',
         'name': 'str',
         'group_type': 'str',
-        'creation_date': 'datetime'
+        'creation_date': 'str'
     }
 
     attribute_map = {
@@ -105,7 +105,7 @@ class AvailableFile(object):
     def name(self):
         """Gets the name of this AvailableFile.  # noqa: E501
 
-        File Name  # noqa: E501
+        File name (valid file extensions are defined under FileExtension)  # noqa: E501
 
         :return: The name of this AvailableFile.  # noqa: E501
         :rtype: str
@@ -116,7 +116,7 @@ class AvailableFile(object):
     def name(self, name):
         """Sets the name of this AvailableFile.
 
-        File Name  # noqa: E501
+        File name (valid file extensions are defined under FileExtension)  # noqa: E501
 
         :param name: The name of this AvailableFile.  # noqa: E501
         :type name: str
@@ -130,8 +130,8 @@ class AvailableFile(object):
                 name is not None and len(name) < 5):
             raise ValueError("Invalid value for `name`, length must be greater than or equal to `5`")  # noqa: E501
         if (self.local_vars_configuration.client_side_validation and
-                name is not None and not re.search(r'^[_a-zA-Z0-9-]+.\w+$', name)):  # noqa: E501
-            raise ValueError(r"Invalid value for `name`, must be a follow pattern or equal to `/^[_a-zA-Z0-9-]+.\w+$/`")  # noqa: E501
+                name is not None and not re.search(r'^[_a-zA-Z0-9-]+\.[a-z]{2,4}$', name)):  # noqa: E501
+            raise ValueError(r"Invalid value for `name`, must be a follow pattern or equal to `/^[_a-zA-Z0-9-]+\.[a-z]{2,4}$/`")  # noqa: E501
 
         self._name = name
 
@@ -139,7 +139,7 @@ class AvailableFile(object):
     def group_type(self):
         """Gets the group_type of this AvailableFile.  # noqa: E501
 
-        Indicator of the file nature  # noqa: E501
+        Indicator of the file nature. **Available values**: <br/> - `parameters` (parameters suggested by the SDLabs optimizer)<br/> - `properties` (properties of the experiment measured according to the given parameters)<br/> - `other` (these files will not be interpreted)  # noqa: E501
 
         :return: The group_type of this AvailableFile.  # noqa: E501
         :rtype: str
@@ -150,7 +150,7 @@ class AvailableFile(object):
     def group_type(self, group_type):
         """Sets the group_type of this AvailableFile.
 
-        Indicator of the file nature  # noqa: E501
+        Indicator of the file nature. **Available values**: <br/> - `parameters` (parameters suggested by the SDLabs optimizer)<br/> - `properties` (properties of the experiment measured according to the given parameters)<br/> - `other` (these files will not be interpreted)  # noqa: E501
 
         :param group_type: The group_type of this AvailableFile.  # noqa: E501
         :type group_type: str
@@ -158,11 +158,14 @@ class AvailableFile(object):
         if self.local_vars_configuration.client_side_validation and group_type is None:  # noqa: E501
             raise ValueError("Invalid value for `group_type`, must not be `None`")  # noqa: E501
         if (self.local_vars_configuration.client_side_validation and
-                group_type is not None and len(group_type) > 50):
-            raise ValueError("Invalid value for `group_type`, length must be less than or equal to `50`")  # noqa: E501
+                group_type is not None and len(group_type) > 10):
+            raise ValueError("Invalid value for `group_type`, length must be less than or equal to `10`")  # noqa: E501
         if (self.local_vars_configuration.client_side_validation and
-                group_type is not None and not re.search(r'(parameters|properties|other)', group_type)):  # noqa: E501
-            raise ValueError(r"Invalid value for `group_type`, must be a follow pattern or equal to `/(parameters|properties|other)/`")  # noqa: E501
+                group_type is not None and len(group_type) < 5):
+            raise ValueError("Invalid value for `group_type`, length must be greater than or equal to `5`")  # noqa: E501
+        if (self.local_vars_configuration.client_side_validation and
+                group_type is not None and not re.search(r'^(parameters|properties|other)$', group_type)):  # noqa: E501
+            raise ValueError(r"Invalid value for `group_type`, must be a follow pattern or equal to `/^(parameters|properties|other)$/`")  # noqa: E501
 
         self._group_type = group_type
 
@@ -170,10 +173,10 @@ class AvailableFile(object):
     def creation_date(self):
         """Gets the creation_date of this AvailableFile.  # noqa: E501
 
-        Following RFC3339 format, this is a string representing an ISO8601 Date-time  # noqa: E501
+        date-time in ISO8601 format  # noqa: E501
 
         :return: The creation_date of this AvailableFile.  # noqa: E501
-        :rtype: datetime
+        :rtype: str
         """
         return self._creation_date
 
@@ -181,13 +184,22 @@ class AvailableFile(object):
     def creation_date(self, creation_date):
         """Sets the creation_date of this AvailableFile.
 
-        Following RFC3339 format, this is a string representing an ISO8601 Date-time  # noqa: E501
+        date-time in ISO8601 format  # noqa: E501
 
         :param creation_date: The creation_date of this AvailableFile.  # noqa: E501
-        :type creation_date: datetime
+        :type creation_date: str
         """
         if self.local_vars_configuration.client_side_validation and creation_date is None:  # noqa: E501
             raise ValueError("Invalid value for `creation_date`, must not be `None`")  # noqa: E501
+        if (self.local_vars_configuration.client_side_validation and
+                creation_date is not None and len(creation_date) > 32):
+            raise ValueError("Invalid value for `creation_date`, length must be less than or equal to `32`")  # noqa: E501
+        if (self.local_vars_configuration.client_side_validation and
+                creation_date is not None and len(creation_date) < 19):
+            raise ValueError("Invalid value for `creation_date`, length must be greater than or equal to `19`")  # noqa: E501
+        if (self.local_vars_configuration.client_side_validation and
+                creation_date is not None and not re.search(r'^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d{1,6})?(\+\d{2}:\d{2}|Z)?$', creation_date)):  # noqa: E501
+            raise ValueError(r"Invalid value for `creation_date`, must be a follow pattern or equal to `/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d{1,6})?(\+\d{2}:\d{2}|Z)?$/`")  # noqa: E501
 
         self._creation_date = creation_date
 

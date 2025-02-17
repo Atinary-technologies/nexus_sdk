@@ -324,6 +324,9 @@ class FilesApi(object):
             200: "GenericResponse",
             401: "GenericResponse",
             403: "GenericResponse",
+            406: "GenericResponse",
+            415: "GenericResponse",
+            429: "GenericResponse",
         }
 
         return self.api_client.call_api(
@@ -596,10 +599,13 @@ class FilesApi(object):
         if self.api_client.client_side_validation and 'project_id' in local_var_params and not re.search(r'^prj_[0-9a-f]{32}$', local_var_params['project_id']):  # noqa: E501
             raise ApiValueError("Invalid value for parameter `project_id` when calling `list_files`, must conform to the pattern `/^prj_[0-9a-f]{32}$/`")  # noqa: E501
         if self.api_client.client_side_validation and ('group_type' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['group_type']) > 50):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `group_type` when calling `list_files`, length must be less than or equal to `50`")  # noqa: E501
-        if self.api_client.client_side_validation and 'group_type' in local_var_params and not re.search(r'(parameters|properties|other)', local_var_params['group_type']):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `group_type` when calling `list_files`, must conform to the pattern `/(parameters|properties|other)/`")  # noqa: E501
+                                                        len(local_var_params['group_type']) > 10):  # noqa: E501
+            raise ApiValueError("Invalid value for parameter `group_type` when calling `list_files`, length must be less than or equal to `10`")  # noqa: E501
+        if self.api_client.client_side_validation and ('group_type' in local_var_params and  # noqa: E501
+                                                        len(local_var_params['group_type']) < 5):  # noqa: E501
+            raise ApiValueError("Invalid value for parameter `group_type` when calling `list_files`, length must be greater than or equal to `5`")  # noqa: E501
+        if self.api_client.client_side_validation and 'group_type' in local_var_params and not re.search(r'^(parameters|properties|other)$', local_var_params['group_type']):  # noqa: E501
+            raise ApiValueError("Invalid value for parameter `group_type` when calling `list_files`, must conform to the pattern `/^(parameters|properties|other)$/`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}
@@ -649,7 +655,7 @@ class FilesApi(object):
     def upload_file(self, project_id, group_type, file, **kwargs):  # noqa: E501
         """Upload a file under a project  # noqa: E501
 
-        Upload a file under a specific project. Note that only users subscribed to the project can upload files to it.   # noqa: E501
+        Upload a file under a specific project. Note that only users subscribed to the project can upload files to it.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -683,7 +689,7 @@ class FilesApi(object):
     def upload_file_with_http_info(self, project_id, group_type, file, **kwargs):  # noqa: E501
         """Upload a file under a project  # noqa: E501
 
-        Upload a file under a specific project. Note that only users subscribed to the project can upload files to it.   # noqa: E501
+        Upload a file under a specific project. Note that only users subscribed to the project can upload files to it.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -766,13 +772,16 @@ class FilesApi(object):
         if self.api_client.client_side_validation and 'project_id' in local_var_params and not re.search(r'^prj_[0-9a-f]{32}$', local_var_params['project_id']):  # noqa: E501
             raise ApiValueError("Invalid value for parameter `project_id` when calling `upload_file`, must conform to the pattern `/^prj_[0-9a-f]{32}$/`")  # noqa: E501
         if self.api_client.client_side_validation and ('group_type' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['group_type']) > 50):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `group_type` when calling `upload_file`, length must be less than or equal to `50`")  # noqa: E501
-        if self.api_client.client_side_validation and 'group_type' in local_var_params and not re.search(r'(parameters|properties|other)', local_var_params['group_type']):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `group_type` when calling `upload_file`, must conform to the pattern `/(parameters|properties|other)/`")  # noqa: E501
+                                                        len(local_var_params['group_type']) > 10):  # noqa: E501
+            raise ApiValueError("Invalid value for parameter `group_type` when calling `upload_file`, length must be less than or equal to `10`")  # noqa: E501
+        if self.api_client.client_side_validation and ('group_type' in local_var_params and  # noqa: E501
+                                                        len(local_var_params['group_type']) < 5):  # noqa: E501
+            raise ApiValueError("Invalid value for parameter `group_type` when calling `upload_file`, length must be greater than or equal to `5`")  # noqa: E501
+        if self.api_client.client_side_validation and 'group_type' in local_var_params and not re.search(r'^(parameters|properties|other)$', local_var_params['group_type']):  # noqa: E501
+            raise ApiValueError("Invalid value for parameter `group_type` when calling `upload_file`, must conform to the pattern `/^(parameters|properties|other)$/`")  # noqa: E501
         if self.api_client.client_side_validation and ('file' in local_var_params and  # noqa: E501
-                                                        len(local_var_params['file']) > 536870912):  # noqa: E501
-            raise ApiValueError("Invalid value for parameter `file` when calling `upload_file`, length must be less than or equal to `536870912`")  # noqa: E501
+                                                        len(local_var_params['file']) > 524288000):  # noqa: E501
+            raise ApiValueError("Invalid value for parameter `file` when calling `upload_file`, length must be less than or equal to `524288000`")  # noqa: E501
         collection_formats = {}
 
         path_params = {}

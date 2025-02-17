@@ -44,7 +44,7 @@ class ProjectDetail(object):
         'files': 'AvailableFilesSummary',
         'group_id': 'str',
         'description': 'str',
-        'creation_date': 'datetime'
+        'creation_date': 'str'
     }
 
     attribute_map = {
@@ -76,7 +76,8 @@ class ProjectDetail(object):
 
         self.id = id
         self.name = name
-        self.owner = owner
+        if owner is not None:
+            self.owner = owner
         self.members = members
         self.files = files
         if group_id is not None:
@@ -157,7 +158,6 @@ class ProjectDetail(object):
     def owner(self):
         """Gets the owner of this ProjectDetail.  # noqa: E501
 
-        User email  # noqa: E501
 
         :return: The owner of this ProjectDetail.  # noqa: E501
         :rtype: str
@@ -168,22 +168,10 @@ class ProjectDetail(object):
     def owner(self, owner):
         """Sets the owner of this ProjectDetail.
 
-        User email  # noqa: E501
 
         :param owner: The owner of this ProjectDetail.  # noqa: E501
         :type owner: str
         """
-        if self.local_vars_configuration.client_side_validation and owner is None:  # noqa: E501
-            raise ValueError("Invalid value for `owner`, must not be `None`")  # noqa: E501
-        if (self.local_vars_configuration.client_side_validation and
-                owner is not None and len(owner) > 254):
-            raise ValueError("Invalid value for `owner`, length must be less than or equal to `254`")  # noqa: E501
-        if (self.local_vars_configuration.client_side_validation and
-                owner is not None and len(owner) < 4):
-            raise ValueError("Invalid value for `owner`, length must be greater than or equal to `4`")  # noqa: E501
-        if (self.local_vars_configuration.client_side_validation and
-                owner is not None and not re.search(r'^(?=[a-zA-Z0-9][a-zA-Z0-9@._%+-]{5,253}$)[a-zA-Z0-9._%+-]{1,64}@(?:(?=[a-zA-Z0-9-]{1,63}\.)[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*\.){1,8}[a-zA-Z]{2,63}$', owner)):  # noqa: E501
-            raise ValueError(r"Invalid value for `owner`, must be a follow pattern or equal to `/^(?=[a-zA-Z0-9][a-zA-Z0-9@._%+-]{5,253}$)[a-zA-Z0-9._%+-]{1,64}@(?:(?=[a-zA-Z0-9-]{1,63}\.)[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*\.){1,8}[a-zA-Z]{2,63}$/`")  # noqa: E501
 
         self._owner = owner
 
@@ -268,8 +256,8 @@ class ProjectDetail(object):
                 group_id is not None and len(group_id) < 1):
             raise ValueError("Invalid value for `group_id`, length must be greater than or equal to `1`")  # noqa: E501
         if (self.local_vars_configuration.client_side_validation and
-                group_id is not None and not re.search(r'^\S*$', group_id)):  # noqa: E501
-            raise ValueError(r"Invalid value for `group_id`, must be a follow pattern or equal to `/^\S*$/`")  # noqa: E501
+                group_id is not None and not re.search(r'^[\w-]+$', group_id)):  # noqa: E501
+            raise ValueError(r"Invalid value for `group_id`, must be a follow pattern or equal to `/^[\w-]+$/`")  # noqa: E501
 
         self._group_id = group_id
 
@@ -297,6 +285,9 @@ class ProjectDetail(object):
                 description is not None and len(description) > 255):
             raise ValueError("Invalid value for `description`, length must be less than or equal to `255`")  # noqa: E501
         if (self.local_vars_configuration.client_side_validation and
+                description is not None and len(description) < 0):
+            raise ValueError("Invalid value for `description`, length must be greater than or equal to `0`")  # noqa: E501
+        if (self.local_vars_configuration.client_side_validation and
                 description is not None and not re.search(r'^[ -~]*$', description)):  # noqa: E501
             raise ValueError(r"Invalid value for `description`, must be a follow pattern or equal to `/^[ -~]*$/`")  # noqa: E501
 
@@ -306,10 +297,10 @@ class ProjectDetail(object):
     def creation_date(self):
         """Gets the creation_date of this ProjectDetail.  # noqa: E501
 
-        Following RFC3339 format, this is a string representing an ISO8601 Date-time  # noqa: E501
+        date-time in ISO8601 format  # noqa: E501
 
         :return: The creation_date of this ProjectDetail.  # noqa: E501
-        :rtype: datetime
+        :rtype: str
         """
         return self._creation_date
 
@@ -317,13 +308,22 @@ class ProjectDetail(object):
     def creation_date(self, creation_date):
         """Sets the creation_date of this ProjectDetail.
 
-        Following RFC3339 format, this is a string representing an ISO8601 Date-time  # noqa: E501
+        date-time in ISO8601 format  # noqa: E501
 
         :param creation_date: The creation_date of this ProjectDetail.  # noqa: E501
-        :type creation_date: datetime
+        :type creation_date: str
         """
         if self.local_vars_configuration.client_side_validation and creation_date is None:  # noqa: E501
             raise ValueError("Invalid value for `creation_date`, must not be `None`")  # noqa: E501
+        if (self.local_vars_configuration.client_side_validation and
+                creation_date is not None and len(creation_date) > 32):
+            raise ValueError("Invalid value for `creation_date`, length must be less than or equal to `32`")  # noqa: E501
+        if (self.local_vars_configuration.client_side_validation and
+                creation_date is not None and len(creation_date) < 19):
+            raise ValueError("Invalid value for `creation_date`, length must be greater than or equal to `19`")  # noqa: E501
+        if (self.local_vars_configuration.client_side_validation and
+                creation_date is not None and not re.search(r'^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d{1,6})?(\+\d{2}:\d{2}|Z)?$', creation_date)):  # noqa: E501
+            raise ValueError(r"Invalid value for `creation_date`, must be a follow pattern or equal to `/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d{1,6})?(\+\d{2}:\d{2}|Z)?$/`")  # noqa: E501
 
         self._creation_date = creation_date
 

@@ -117,7 +117,7 @@ conf = nexus_sdk.Configuration(
                  ):
         """Constructor
         """
-        self._base_path = "https://scientia.atinary.com/nexus/api/latest" if host is None else host
+        self._base_path = "https://api.enterprise.atinary.com/nexus/latest" if host is None else host
         """Default Base url
         """
         self.server_index = 0 if server_index is None and host is None else server_index
@@ -153,6 +153,9 @@ conf = nexus_sdk.Configuration(
         """
         self.discard_unknown_keys = discard_unknown_keys
         self.disabled_client_side_validations = disabled_client_side_validations
+        self.access_token = None
+        """access token for OAuth/Bearer
+        """
         self.logger = {}
         """Logging Settings
         """
@@ -190,6 +193,10 @@ conf = nexus_sdk.Configuration(
         """
         self.assert_hostname = None
         """Set this to True/False to enable/disable SSL hostname verification.
+        """
+        self.tls_server_name = None
+        """SSL/TLS Server Name Indication (SNI)
+           Set this to the SNI value expected by the server.
         """
 
         self.connection_pool_maxsize = multiprocessing.cpu_count() * 5
@@ -429,16 +436,12 @@ conf = nexus_sdk.Configuration(
         """
         return [
             {
-                'url': "https://scientia.atinary.com/nexus/api/latest",
-                'description': "Production server",
+                'url': "https://api.enterprise.atinary.com/nexus/latest",
+                'description': "Nexus Enterprise server",
             },
             {
-                'url': "http://staging.scientia.atinary.com/nexus/api/latest",
-                'description': "Integration server",
-            },
-            {
-                'url': "http://localhost/api/1.1",
-                'description': "local server",
+                'url': "https://api.scientia.atinary.com/nexus/latest",
+                'description': "Nexus Scientia server",
             }
         ]
 

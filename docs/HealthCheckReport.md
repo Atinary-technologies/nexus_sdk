@@ -4,7 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**generated_at** | **datetime** | Following RFC3339 format, this is a string representing an ISO8601 Date-time | 
+**generated_at** | **str** | date-time in ISO8601 format | [readonly] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

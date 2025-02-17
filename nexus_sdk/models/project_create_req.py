@@ -123,6 +123,9 @@ class ProjectCreateReq(object):
                 description is not None and len(description) > 255):
             raise ValueError("Invalid value for `description`, length must be less than or equal to `255`")  # noqa: E501
         if (self.local_vars_configuration.client_side_validation and
+                description is not None and len(description) < 0):
+            raise ValueError("Invalid value for `description`, length must be greater than or equal to `0`")  # noqa: E501
+        if (self.local_vars_configuration.client_side_validation and
                 description is not None and not re.search(r'^[ -~]*$', description)):  # noqa: E501
             raise ValueError(r"Invalid value for `description`, must be a follow pattern or equal to `/^[ -~]*$/`")  # noqa: E501
 
@@ -155,8 +158,8 @@ class ProjectCreateReq(object):
                 group_id is not None and len(group_id) < 1):
             raise ValueError("Invalid value for `group_id`, length must be greater than or equal to `1`")  # noqa: E501
         if (self.local_vars_configuration.client_side_validation and
-                group_id is not None and not re.search(r'^\S*$', group_id)):  # noqa: E501
-            raise ValueError(r"Invalid value for `group_id`, must be a follow pattern or equal to `/^\S*$/`")  # noqa: E501
+                group_id is not None and not re.search(r'^[\w-]+$', group_id)):  # noqa: E501
+            raise ValueError(r"Invalid value for `group_id`, must be a follow pattern or equal to `/^[\w-]+$/`")  # noqa: E501
 
         self._group_id = group_id
 
